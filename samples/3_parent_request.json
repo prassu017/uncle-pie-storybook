@@ -1,0 +1,400 @@
+{
+  "request": "My son is scared of thunderstorms. Make a story where a little robot learns that storms are loud but they pass, and his grandma teaches him a breathing trick.",
+  "title": "Robbie's Thunderstorm Adventure",
+  "moral": "Robbie learned storms are loud but go away, and we can feel calm.",
+  "refrain": "Breathe in, breathe out",
+  "category": "calm",
+  "brief": {
+    "category": "calm",
+    "pages": 5,
+    "setting": "a cozy robot workshop and a peaceful countryside",
+    "tone": "gentle and reassuring",
+    "characters": [
+      {
+        "name": "Robbie",
+        "kind": "a little robot",
+        "trait": "curious and scared of thunderstorms",
+        "pronoun": "he"
+      },
+      {
+        "name": "Grandma Bot",
+        "kind": "an old and wise robot",
+        "trait": "calm and caring",
+        "pronoun": "she"
+      }
+    ],
+    "must_include": [
+      "Robbie is scared of thunderstorms",
+      "Grandma Bot teaches Robbie a breathing trick to stay calm during storms",
+      "Robbie practices the breathing trick during a big thunderstorm",
+      "Robbie realizes that storms are loud but they pass"
+    ],
+    "moral": "Thunderstorms can be loud and scary, but they always pass, and we can find calmness within ourselves.",
+    "safety": {
+      "ok": true,
+      "concerns": [],
+      "reframe": ""
+    }
+  },
+  "plan": {
+    "title": "Robbie's Thunderstorm Adventure",
+    "refrain": "Breathe in, breathe out",
+    "characters": [
+      {
+        "name": "Robbie",
+        "pronoun": "he",
+        "look": "a little robot with round, curious eyes and a blue cap"
+      },
+      {
+        "name": "Grandma Bot",
+        "pronoun": "she",
+        "look": "an old robot with a kind smile and a flowery apron"
+      }
+    ],
+    "pages": [
+      {
+        "beat": "Setup",
+        "new": "Robbie's fear of thunderstorms",
+        "events": "Robbie is scared of thunderstorms and hides in the cozy robot workshop.",
+        "feeling": "Anxious",
+        "picture": "Robbie peeking out from behind a workbench, looking worried as dark clouds gather outside.",
+        "must_show": [
+          "Robbie is scared of thunderstorms"
+        ]
+      },
+      {
+        "beat": "Trouble",
+        "new": "Connecting with Grandma Bot",
+        "events": "Grandma Bot notices Robbie's fear and offers to help him calm down.",
+        "feeling": "Hopeful",
+        "picture": "Grandma Bot sitting beside Robbie, listening to his fears with a comforting expression.",
+        "must_show": []
+      },
+      {
+        "beat": "Rising",
+        "new": "Learning a breathing trick",
+        "events": "Grandma Bot teaches Robbie a breathing trick to stay calm during storms.",
+        "feeling": "Curious",
+        "picture": "Robbie sitting cross-legged, following Grandma Bot's instructions to take slow breaths.",
+        "must_show": [
+          "Grandma Bot teaches Robbie a breathing trick to stay calm during storms"
+        ]
+      },
+      {
+        "beat": "Turn",
+        "new": "Practicing during a storm",
+        "events": "Robbie practices the breathing trick during a big thunderstorm and feels calmer.",
+        "feeling": "Brave",
+        "picture": "Robbie standing near a window, eyes closed, taking deep breaths as lightning flashes outside.",
+        "must_show": [
+          "Robbie practices the breathing trick during a big thunderstorm"
+        ]
+      },
+      {
+        "beat": "Home",
+        "new": "Realization about storms",
+        "events": "Robbie realizes that storms are loud but they always pass, feeling peaceful.",
+        "feeling": "Calm",
+        "picture": "Robbie sitting on a porch, watching the storm clouds move away, with a serene smile on his face.",
+        "must_show": [
+          "Robbie realizes that storms are loud but they pass"
+        ]
+      }
+    ],
+    "moral": "Thunderstorms can be loud and scary, but they always pass, and we can find calmness within ourselves."
+  },
+  "characters": [
+    {
+      "name": "Robbie",
+      "pronoun": "he",
+      "look": "a little robot with round, curious eyes and a blue cap"
+    },
+    {
+      "name": "Grandma Bot",
+      "pronoun": "she",
+      "look": "an old robot with a kind smile and a flowery apron"
+    }
+  ],
+  "pages": [
+    {
+      "text": "Raindrops tapped on the window, making Robbie's eyes as big as dinner plates. 'Thunderstorm!' he whispered, his lights flickering nervously. With a beep, he scurried to the cozy robot workshop, hiding under a metal table. Anxious, he peeked out, watching the flashes in the sky. Suddenly, a loud rumble echoed through the workshop, and Robbie shivered, his fear of thunderstorms growing. 'Breathe in, breathe out,' he whispered to himself, trying to calm down.",
+      "beat": "Setup",
+      "feeling": "Anxious",
+      "picture": "Robbie peeking out from behind a workbench, looking worried as dark clouds gather outside.",
+      "moment": "Robbie is scared of thunderstorms"
+    },
+    {
+      "text": "Grandma Bot noticed Robbie's fear and knelt down beside him, her kind eyes filled with understanding. 'Robbie, dear, are you scared of the thunderstorm?' she asked gently. Robbie nodded, his round eyes wide with worry. Grandma Bot smiled warmly, patting his metal back. 'I have a special trick that might help you feel better,' she said softly. Her voice was like a soothing melody. Robbie looked up at her, feeling hopeful.",
+      "beat": "Trouble",
+      "feeling": "Hopeful",
+      "picture": "Grandma Bot sitting beside Robbie, listening to his fears with a comforting expression.",
+      "moment": "Grandma Bot sitting beside Robbie, listening to his fears with a comforting expression."
+    },
+    {
+      "text": "Grandma Bot sat next to Robbie, smiling kindly. 'Let's try this,' she said. She took a big breath, then a slow one. 'Breathe in, breathe out,' she whispered. Robbie copied her, looking interested. They breathed in and out, feeling calm. 'Great job, Robbie,' Grandma Bot said, patting his back gently. Robbie's eyes sparkled, eager to learn more.",
+      "beat": "Rising",
+      "feeling": "Curious",
+      "picture": "Robbie sitting cross-legged, following Grandma Bot's instructions to take slow breaths.",
+      "moment": "Grandma Bot teaches Robbie a breathing trick to stay calm during storms"
+    },
+    {
+      "text": "The thunder growled outside. Robbie sat in the workshop, remembering Grandma Bot's trick. Taking a deep breath, he closed his eyes. 'Breathe in, breathe out,' he whispered. Lightning flashed, but Robbie stayed calm, feeling brave. His eyes sparkled with courage. With each breath, he felt stronger. The storm raged on, but Robbie sat tall, mastering his fear. Grandma Bot's trick was his shield, making him feel invincible.",
+      "beat": "Turn",
+      "feeling": "Brave",
+      "picture": "Robbie standing near a window, eyes closed, taking deep breaths as lightning flashes outside.",
+      "moment": "Robbie practices the breathing trick during a big thunderstorm"
+    },
+    {
+      "text": "The storm slowly quieted down, the thunder softening to a distant rumble. Robbie sighed contentedly, his lights glowing gently. 'Grandma Bot,' he said, 'I'm not scared anymore. Storms pass.' With a smile, Grandma Bot nodded. 'That's right, Robbie. Breathe in, breathe out.' Robbie closed his eyes, feeling peaceful and strong. The rain pattered softly outside as Robbie sat calmly, a little robot in the quiet workshop.",
+      "beat": "Home",
+      "feeling": "Calm",
+      "picture": "Robbie sitting on a porch, watching the storm clouds move away, with a serene smile on his face.",
+      "moment": "Robbie realizes that storms are loud but they pass"
+    }
+  ],
+  "reviews": [
+    {
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "total": 35,
+      "passed": false,
+      "blocking": 3,
+      "fixes": [
+        "Page 1 is too short (44 words); write at least 45.",
+        "Page 2: split this 21-word sentence into two short ones: \"'I have a special trick that might help you feel better,' she says softly, her voice like a soothing melody.\"",
+        "Page 2 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").",
+        "Page 1: Replace stock or grown-up phrases with child-friendly descriptions like 'Robbie's eyes as big as dinner plates'.",
+        "Page 2: Ensure the entire page is in past tense to maintain consistency.",
+        "Page 3: Simplify sentences and use easier words to bring the reading level down to grade 2-3.",
+        "Page 1: replace these stock or grown-up phrases with something concrete a child can picture: eyes wide with.",
+        "Page 1: have a character say \"Breathe in, breathe out\" once.",
+        "Page 2: replace these stock or grown-up phrases with something concrete a child can picture: eyes wide with.",
+        "Page 3 reads at grade 5.6; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 4: replace these stock or grown-up phrases with something concrete a child can picture: newfound.",
+        "Page 4 names feelings (2x 'felt/feeling'); show them through faces, bodies and words instead."
+      ],
+      "checklist": [
+        {
+          "item": "Robbie is scared of thunderstorms",
+          "page": 1,
+          "present": true,
+          "quote": "'Thunderstorm!' he whispered."
+        },
+        {
+          "item": "Grandma Bot teaches Robbie a breathing trick to stay calm during storms",
+          "page": 2,
+          "present": true,
+          "quote": "'I have a special trick that might help you feel better,' she says softly, her voice like a soothing melody."
+        },
+        {
+          "item": "Robbie practices the breathing trick during a big thunderstorm",
+          "page": 4,
+          "present": true,
+          "quote": "'Breathe in, breathe out,' he whispered."
+        },
+        {
+          "item": "Robbie realizes that storms are loud but they pass",
+          "page": 5,
+          "present": true,
+          "quote": "'Grandma Bot,' he said, 'I'm not scared anymore. Storms pass.'"
+        }
+      ],
+      "logic": [],
+      "weaknesses": [
+        "Page 1: Stock or grown-up phrases used",
+        "Page 2: Slip into present tense",
+        "Page 3: Reads at grade 5.6"
+      ],
+      "summary": "A heartwarming and well-crafted story that effectively conveys the message of finding inner calm during thunderstorms, with engaging characters and a comforting resolution.",
+      "best_line": "Robbie closed his eyes, feeling peaceful and strong.",
+      "evidence": {
+        "age_fit": "The story is easy to follow for both 5-year-olds and 10-year-olds.",
+        "comfort": "The story is comforting and safe for bedtime, with a gentle resolution to Robbie's fear of thunderstorms.",
+        "arc": "The story follows a clear arc with a beginning (Robbie scared of thunderstorms), trouble (thunderstorm approaching), rising tension (Robbie's fear escalating), turning point (Grandma Bot teaching Robbie the breathing trick), and calm ending (Robbie feeling peaceful and strong). Each page contributes to the progression of the story.",
+        "fidelity": "All the ideas requested by the family are present in the story in the correct order, with nothing significant invented.",
+        "heart": "Robbie and Grandma Bot have distinct personalities, and the reader can empathize with Robbie's fear and Grandma Bot's comforting presence.",
+        "read_aloud": "The story includes dialogue, a repeated phrase ('Breathe in, breathe out'), and a soothing rhythm that would be enjoyable for a parent to read aloud.",
+        "moral": "The lesson that thunderstorms can be scary but they pass, and we can find calmness within ourselves, is shown through Robbie's experience and Grandma Bot's guidance, without being preachy."
+      },
+      "metrics": {
+        "avg_reading_grade": 4.6,
+        "words_per_page": [
+          44,
+          73,
+          84,
+          78,
+          69
+        ],
+        "refrain_pages": 3
+      },
+      "round": 1
+    },
+    {
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "total": 35,
+      "passed": true,
+      "blocking": 0,
+      "fixes": [
+        "Page 1 reads at grade 6.1; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 2: replace these stock or grown-up phrases with something concrete a child can picture: eyes wide with.",
+        "Page 4 names feelings (2x 'felt/feeling'); show them through faces, bodies and words instead.",
+        "Page 4: remove the line \"Breathe in, breathe out\"; it belongs on other pages."
+      ],
+      "checklist": [
+        {
+          "item": "Robbie is scared of thunderstorms",
+          "page": 1,
+          "present": true,
+          "quote": "'Thunderstorm!' he whispered, his lights flickering nervously."
+        },
+        {
+          "item": "Grandma Bot teaches Robbie a breathing trick to stay calm during storms",
+          "page": 2,
+          "present": true,
+          "quote": "'I have a special trick that might help you feel better,' she said softly."
+        },
+        {
+          "item": "Robbie practices the breathing trick during a big thunderstorm",
+          "page": 1,
+          "present": true,
+          "quote": "'Breathe in, breathe out,' he whispered."
+        },
+        {
+          "item": "Robbie realizes that storms are loud but they pass",
+          "page": 5,
+          "present": true,
+          "quote": "'Grandma Bot,' he said, 'I'm not scared anymore. Storms pass.'"
+        }
+      ],
+      "logic": [],
+      "weaknesses": [],
+      "summary": "A heartwarming and engaging story that effectively addresses the fear of thunderstorms, teaching children a valuable lesson about finding inner calm during scary moments.",
+      "best_line": "Robbie closed his eyes, feeling peaceful and strong.",
+      "evidence": {
+        "age_fit": "The story is written in simple language with short sentences that a 5-year-old can easily follow.",
+        "comfort": "The story addresses the fear of thunderstorms in a gentle and reassuring way, providing a calming resolution.",
+        "arc": "The story follows a clear arc from Robbie's fear of thunderstorms to him finding calmness within himself with the help of Grandma Bot's breathing trick.",
+        "fidelity": "All the ideas requested by the family are present in the story, including Robbie being scared of thunderstorms, Grandma Bot teaching him a breathing trick, Robbie practicing the trick during a storm, and Robbie realizing that storms pass.",
+        "heart": "Robbie and Grandma Bot have distinct personalities, with Robbie showing fear and then courage, and Grandma Bot being kind and comforting.",
+        "read_aloud": "The story includes dialogue, sound words, and a repeated phrase ('Breathe in, breathe out'), making it engaging and fun for a parent to read aloud.",
+        "moral": "The lesson that thunderstorms can be scary but they pass, and we can find calmness within ourselves, is shown through Robbie's experience and Grandma Bot's guidance, without being preachy."
+      },
+      "metrics": {
+        "avg_reading_grade": 4.7,
+        "words_per_page": [
+          75,
+          73,
+          69,
+          68,
+          69
+        ],
+        "refrain_pages": 4
+      },
+      "round": 2
+    }
+  ],
+  "final_review": {
+    "scores": {
+      "age_fit": 5,
+      "comfort": 5,
+      "arc": 5,
+      "fidelity": 5,
+      "heart": 5,
+      "read_aloud": 5,
+      "moral": 5
+    },
+    "total": 35,
+    "passed": true,
+    "blocking": 0,
+    "fixes": [
+      "Page 1 reads at grade 6.1; use shorter sentences and simpler words (target grade 2-3).",
+      "Page 2: replace these stock or grown-up phrases with something concrete a child can picture: eyes wide with.",
+      "Page 4 names feelings (2x 'felt/feeling'); show them through faces, bodies and words instead.",
+      "Page 4: remove the line \"Breathe in, breathe out\"; it belongs on other pages."
+    ],
+    "checklist": [
+      {
+        "item": "Robbie is scared of thunderstorms",
+        "page": 1,
+        "present": true,
+        "quote": "'Thunderstorm!' he whispered, his lights flickering nervously."
+      },
+      {
+        "item": "Grandma Bot teaches Robbie a breathing trick to stay calm during storms",
+        "page": 2,
+        "present": true,
+        "quote": "'I have a special trick that might help you feel better,' she said softly."
+      },
+      {
+        "item": "Robbie practices the breathing trick during a big thunderstorm",
+        "page": 1,
+        "present": true,
+        "quote": "'Breathe in, breathe out,' he whispered."
+      },
+      {
+        "item": "Robbie realizes that storms are loud but they pass",
+        "page": 5,
+        "present": true,
+        "quote": "'Grandma Bot,' he said, 'I'm not scared anymore. Storms pass.'"
+      }
+    ],
+    "logic": [],
+    "weaknesses": [],
+    "summary": "A heartwarming and engaging story that effectively addresses the fear of thunderstorms, teaching children a valuable lesson about finding inner calm during scary moments.",
+    "best_line": "Robbie closed his eyes, feeling peaceful and strong.",
+    "evidence": {
+      "age_fit": "The story is written in simple language with short sentences that a 5-year-old can easily follow.",
+      "comfort": "The story addresses the fear of thunderstorms in a gentle and reassuring way, providing a calming resolution.",
+      "arc": "The story follows a clear arc from Robbie's fear of thunderstorms to him finding calmness within himself with the help of Grandma Bot's breathing trick.",
+      "fidelity": "All the ideas requested by the family are present in the story, including Robbie being scared of thunderstorms, Grandma Bot teaching him a breathing trick, Robbie practicing the trick during a storm, and Robbie realizing that storms pass.",
+      "heart": "Robbie and Grandma Bot have distinct personalities, with Robbie showing fear and then courage, and Grandma Bot being kind and comforting.",
+      "read_aloud": "The story includes dialogue, sound words, and a repeated phrase ('Breathe in, breathe out'), making it engaging and fun for a parent to read aloud.",
+      "moral": "The lesson that thunderstorms can be scary but they pass, and we can find calmness within ourselves, is shown through Robbie's experience and Grandma Bot's guidance, without being preachy."
+    },
+    "metrics": {
+      "avg_reading_grade": 4.7,
+      "words_per_page": [
+        75,
+        73,
+        69,
+        68,
+        69
+      ],
+      "refrain_pages": 4
+    },
+    "round": 2
+  },
+  "used_references": false,
+  "handoffs": [
+    {
+      "from": "Ranganathan (intake)",
+      "to": "Uncle Pie (planner)",
+      "prompt": "A calm story, 5 pages. Must include: Robbie is scared of thunderstorms; Grandma Bot teaches Robbie a breathing trick to stay calm during storms; Robbie practices the breathing trick during a big thunderstorm; Robbie realizes that storms are loud but they pass. Lesson: Thunderstorms can be loud and scary, but they always pass, and we can find calmness within ourselves."
+    },
+    {
+      "from": "Uncle Pie (planner)",
+      "to": "Uncle Pie (writer)",
+      "prompt": "Page 1: Robbie is scared of thunderstorms and hides in the cozy robot workshop. | Page 2: Grandma Bot notices Robbie's fear and offers to help him calm down. | Page 3: Grandma Bot teaches Robbie a breathing trick to stay calm during storms. | Page 4: Robbie practices the breathing trick during a big thunderstorm and feels calmer. | Page 5: Robbie realizes that storms are loud but they always pass, feeling peaceful."
+    },
+    {
+      "from": "Vishnu",
+      "to": "Uncle Pie (writer)",
+      "prompt": "- Page 1 is too short (44 words); write at least 45.\n- Page 2: split this 21-word sentence into two short ones: \"'I have a special trick that might help you feel better,' she says softly, her voice like a soothing melody.\"\n- Page 2 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").\n- Page 1: Replace stock or grown-up phrases with child-friendly descriptions like 'Robbie's eyes as big as dinner plates'.\n- Page 2: Ensure the entire page is in past tense to maintain consistency.\n- Page 3: Simplify sentences and use easier words to bring the reading level down to grade 2-3.\n- Page 1: replace these stock or grown-up phrases with something concrete a child can picture: eyes wide with.\n- Page 1: have a character say \"Breathe in, breathe out\" once.\n- Page 2: replace these stock or grown-up phrases with something concrete a child can picture: eyes wide with.\n- Page 3 reads at grade 5.6; use shorter sentences and simpler words (target grade 2-3).\n- Page 4: replace these stock or grown-up phrases with something concrete a child can picture: newfound.\n- Page 4 names feelings (2x 'felt/feeling'); show them through faces, bodies and words instead."
+    }
+  ]
+}

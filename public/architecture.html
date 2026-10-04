@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Uncle Pie Works</title>
+  <meta name="description" content="Architecture, agent design, judges, prompting strategy and infrastructure of Uncle Pie's Storybook.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Caveat:wght@600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .doc { max-width: 1080px; margin: 0 auto; padding: 32px clamp(16px, 4vw, 40px) 80px; }
+    .doc h1 { font-size: clamp(30px, 4.4vw, 48px); }
+    .doc h2 { font-size: clamp(22px, 3vw, 30px); margin-top: 56px; padding-top: 8px; border-top: 1px solid var(--line); }
+    .doc h3 { font-size: 19px; margin-top: 24px; }
+    .doc p, .doc li { color: var(--ink-2); }
+    .toc { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; }
+    .toc a { text-decoration: none; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 700; }
+    .toc a:hover { border-color: var(--teal); }
+    .figure { background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; margin: 16px 0; overflow-x: auto; }
+    .figure .mermaid { min-width: 640px; }
+    .caption { font-size: 14px; color: var(--muted); margin: 8px 0 0; }
+    .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 14px; color: var(--ink-2); margin: 6px 0 0; }
+    .legend span::before { content: ""; display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+    .legend .m::before { background: #fdf0d8; border: 1px solid #b97a17; }
+    .legend .c::before { background: #dcefe9; border: 1px solid #1f5b57; }
+    .legend .x::before { background: #f3e7f6; border: 1px solid #7a4a87; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--card); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { background: #f1e7d4; font-family: var(--sans); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--ink-2); }
+    td code, p code, li code { font: 13px ui-monospace, Consolas, monospace; background: var(--paper); padding: 1px 5px; border-radius: 5px; }
+    .tablewrap { overflow-x: auto; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 14px; }
+    .card { background: var(--card); border-radius: 14px; padding: 16px 18px; box-shadow: var(--shadow); }
+    .card h4 { margin: 0 0 6px; font-family: var(--serif); font-size: 17px; }
+    .card p { margin: 0; font-size: 15px; }
+    .card .tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: #f7e4c6; color: var(--saffron-d); margin-bottom: 6px; }
+    .card.fix .tag { background: #dcefe9; color: var(--teal-d); }
+    .timing { display: grid; grid-template-columns: max-content 1fr max-content; gap: 8px 12px; align-items: center; font-size: 15px; }
+    .timing .bar { height: 14px; }
+    .navlink[aria-current="page"] { color: var(--ink); text-decoration: underline; text-underline-offset: 6px; }
+    .doc-end { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 48px; }
+    .back { display: inline-block; margin-bottom: 12px; color: var(--teal); font-weight: 700; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Back to Uncle Pie's Storybook">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 14c8-4 16-4 24 2v38c-8-6-16-6-24-2z" fill="var(--saffron)"/><path d="M56 14c-8-4-16-4-24 2v38c8-6 16-6 24-2z" fill="var(--teal)"/></svg>
+      <span>Uncle Pie's <em>Storybook</em></span>
+    </a>
+    <nav>
+      <a href="index.html#how" class="navlink">How it works</a>
+      <a href="architecture.html" class="navlink" aria-current="page">How it's built</a>
+      <a href="index.html#shelf" class="btn btn-ghost">My bookshelf</a>
+      <a href="index.html#create" class="btn btn-primary">Create a story</a>
+    </nav>
+  </header>
+
+  <main class="doc">
+    <p class="eyebrow">Architecture</p>
+    <h1>How Uncle Pie works</h1>
+    <p><b>gpt-3.5-turbo</b> writes and judges every word of the story. Plain code orchestrates and keeps
+      score. Other models only draw, see, speak and listen.</p>
+    <div class="toc">
+      <a href="#overview">System flow</a><a href="#sequence">Lifecycle</a><a href="#judge">Judges</a>
+      <a href="#worker">Page workers</a><a href="#infra">Infrastructure</a><a href="#agents">Agents</a>
+      <a href="#lessons">Key decisions</a>
+    </div>
+
+    <!-- ===================================================== overview -->
+    <h2 id="overview">1. System flow</h2>
+    <p>Code makes the decisions that must be reliable; models do the creative and judgement work.</p>
+    <div class="figure"><pre class="mermaid">
+flowchart TD
+    U([Family: text, voice or photos]):::user -->|voice| STT[Pitman: transcribe<br/>gpt-4o-mini-transcribe]:::other
+    U -->|photos| VIS[Homai: photo reader<br/>describes looks, never identity]:::other
+    U -->|text| IN
+    STT --> IN
+    VIS --> IN
+    subgraph TEXT [Story text: gpt-3.5-turbo only]
+      IN[Ranganathan: intake<br/>category, ideas, lesson, safety reframe]:::model --> ASSIGN{{Code pins each idea to a page}}:::code
+      ASSIGN --> PL[Uncle Pie plans<br/>5-beat arc, refrain, character looks]:::model
+      PL --> WR[Uncle Pie writes<br/>one page per call, in order,<br/>each sees the story so far]:::model
+      WR --> VJ[Vishnu judges<br/>see section 3]:::model
+      VJ -->|notes routed to pages| RV[Uncle Pie rewrites<br/>only the noted pages, in parallel]:::model
+      RV --> VJ
+    end
+    VJ -->|pass, or best of 4| READ([Book opens: the family reads right away]):::user
+    READ --> FAN{{Orchestrator: two independent lanes}}:::code
+    PL -.->|characters known early| CAST[Cast sheet<br/>Caldecott, gpt-image-2]:::other
+    FAN --> NL[Narration lane<br/>Ameen reads each page, ~5 s]:::other
+    FAN --> PLN[Picture lane, one worker per page:<br/>Uncle Pie shot spec, Caldecott paints,<br/>Ursula judges]:::other
+    CAST --> PLN
+    NL --> SC{{Scorer: report card}}:::code
+    PLN --> SC
+    NL -.->|voice plays as soon as ready| READ
+    PLN -.->|pictures paint in as ready| READ
+    READ -->|change request| RV
+    classDef model fill:#fdf0d8,stroke:#b97a17,color:#2c221e
+    classDef code fill:#dcefe9,stroke:#1f5b57,color:#2c221e
+    classDef other fill:#f3e7f6,stroke:#7a4a87,color:#2c221e
+    classDef user fill:#fffdf7,stroke:#2c221e,color:#2c221e
+    </pre>
+      <div class="legend"><span class="m">gpt-3.5-turbo call</span><span class="c">plain code (deterministic)</span><span class="x">other OpenAI model (image, vision, voice)</span></div>
+    </div>
+
+    <!-- ===================================================== sequence -->
+    <h2 id="sequence">2. Request lifecycle and prompt handoffs</h2>
+    <p>Agents hand each other prompts, not just data. The app shows every handoff live.</p>
+    <div class="figure"><pre class="mermaid">
+sequenceDiagram
+    autonumber
+    participant B as Browser
+    participant A as API (FastAPI)
+    participant P as Uncle Pie (gpt-3.5)
+    participant V as Vishnu (gpt-3.5 + code)
+    participant I as Caldecott, painter (gpt-image-2)
+    participant J as Ursula, art judge (gpt-4.1-mini)
+    participant N as Ameen, narrator (gpt-4o-mini-tts)
+    B->>A: POST /api/story (idea, photos)
+    A->>P: intake, plan
+    A-->>B: stream: brief, plan, handoff
+    B->>A: POST /api/cast (starts while writing continues)
+    A->>I: cast sheet
+    loop up to 4 drafts
+        A->>P: write / rewrite pages
+        A->>V: metrics + quote-checked fidelity + rubric
+        A-->>B: stream: draft, review, notes handoff
+    end
+    A-->>B: stream: done (story + all handoffs)
+    Note over B: book opens, family starts reading
+    par narration lane, one request per page
+        B->>A: POST /api/narrate (page text + mood)
+        A->>N: narrate
+        A-->>B: mp3, plays as soon as it arrives
+    and picture lane, one request per page
+        B->>A: POST /api/picture (story, cast sheet)
+        A->>P: shot spec for this page
+        A->>I: paint
+        A->>J: does it show the moment?
+        opt fails
+            J-->>A: rewritten shot spec
+            A->>I: redraw once
+        end
+        A-->>B: stream: progress, image, checks
+    end
+    B->>A: POST /api/report
+    A-->>B: report card (code)
+    </pre></div>
+
+    <!-- ===================================================== judges -->
+    <h2 id="judge">3. The judges</h2>
+    <p>gpt-3.5-turbo alone is too lenient, so Vishnu combines code checks, two quote-verified reads (fidelity and story logic) and a rubric.</p>
+    <div class="figure"><pre class="mermaid">
+flowchart TD
+    D[Draft] --> M{{Code metrics<br/>words, sentence length,<br/>reading grade, blocklist,<br/>clichés, leaked prompt words,<br/>copied plan text, refrain count}}:::code
+    D --> F[Ida: fidelity auditor<br/>quote the sentence where<br/>each requested idea happens]:::model
+    D --> L[Continuity read<br/>quote each repeated event,<br/>double arrival, tense slip]:::model
+    F --> Q{{Code checks each quote<br/>is really on the page}}:::code
+    L --> Q
+    M --> R[Rubric review<br/>3 weaknesses first,<br/>then 7 scores with evidence]:::model
+    Q --> R
+    R --> G{{Gate<br/>all scores at least 4<br/>AND no blocking problem<br/>AND every idea found}}:::code
+    G -->|pass| OUT([Print]):::user
+    G -->|fail| NOTES[Ranked notes, max 6<br/>code problems first,<br/>then missing ideas,<br/>then taste]:::code
+    classDef model fill:#fdf0d8,stroke:#b97a17,color:#2c221e
+    classDef code fill:#dcefe9,stroke:#1f5b57,color:#2c221e
+    classDef user fill:#fffdf7,stroke:#2c221e,color:#2c221e
+    </pre></div>
+    <p class="caption">Pass needs every score at least 4, no blocking problem, and every requested idea found. Otherwise the best of four drafts is printed.</p>
+
+    <!-- ===================================================== worker -->
+    <h2 id="worker">4. A picture worker</h2>
+    <p>Five run at once, separately from narration, each sharing one cast sheet.</p>
+    <div class="figure"><pre class="mermaid">
+stateDiagram-v2
+    [*] --> Directing: finished page text + required moment
+    Directing --> Painting: Uncle Pie's shot spec + cast sheet + family photos
+    Painting --> Judging
+    Judging --> Done: shows the moment
+    Judging --> Redrawing: wrong moment, wrong look, text, or unsafe
+    Redrawing --> Rejudging: art judge's rewritten shot spec
+    Rejudging --> Done: pass or flag, never loops forever
+    Done --> [*]
+    note right of Painting: rate limited (5 images a minute)?<br/>wait as long as OpenAI asks, retry
+    </pre></div>
+
+    <!-- ===================================================== infra -->
+    <h2 id="infra">5. Infrastructure</h2>
+    <div class="figure"><pre class="mermaid">
+flowchart LR
+    subgraph Client [Browser]
+      UI[Static app<br/>index.html, app.js]
+      DRAW[draw.js<br/>edge tracing + watercolour mask<br/>no AI, runs locally]
+    end
+    subgraph Vercel
+      CDN[Static files<br/>public/]
+      FN[Python function<br/>api/index.py, FastAPI<br/>max 300 s, NDJSON streaming]
+    end
+    subgraph OpenAI
+      T[gpt-3.5-turbo<br/>all story text]
+      IM[gpt-image-2]
+      VI[gpt-4.1-mini vision]
+      AU[gpt-4o-mini-tts / transcribe]
+    end
+    UI --> CDN
+    UI -->|story, cast, 5 x narrate, 5 x picture, report| FN
+    FN --> T & IM & VI & AU
+    UI --> DRAW
+    ENV[(Env vars<br/>OPENAI_API_KEY<br/>optional APP_PASSCODE)] -.-> FN
+    </pre></div>
+    <p class="caption">Narration and picture requests run in parallel from the browser, keeping each serverless call short. The key lives only in an environment variable; an optional passcode can lock a deployment.</p>
+
+    <!-- ===================================================== agents -->
+    <h2 id="agents">6. Agents</h2>
+    <p>Each agent is named after a pioneer of its job.</p>
+    <div class="tablewrap"><table>
+      <thead><tr><th>Agent</th><th>Model</th><th>Job</th></tr></thead>
+      <tbody>
+        <tr><td>Ranganathan (intake)</td><td>gpt-3.5-turbo</td><td>Category, the family's ideas in order, lesson, safety reframe</td></tr>
+        <tr><td>Uncle Pie</td><td>gpt-3.5-turbo</td><td>Plans, writes one page per call, revises; inside each picture worker, writes that page's shot spec</td></tr>
+        <tr><td>Vishnu (judge)</td><td>gpt-3.5-turbo + code</td><td>Judges each draft; sends ranked notes back</td></tr>
+        <tr><td>Ida (fidelity auditor)</td><td>gpt-3.5-turbo + code</td><td>Quotes where each requested idea happens; code verifies the quote</td></tr>
+        <tr><td>Caldecott (painter)</td><td>gpt-image-2</td><td>Cast sheet, then one picture per page</td></tr>
+        <tr><td>Ursula (art judge)</td><td>gpt-4.1-mini</td><td>Checks each picture shows its story moment; rewrites the shot spec once if not</td></tr>
+        <tr><td>Ameen (narrator)</td><td>gpt-4o-mini-tts</td><td>Reads each page aloud, voice "ballad"</td></tr>
+        <tr><td>Homai (photo reader) &middot; Pitman (transcriber)</td><td>gpt-4.1-mini &middot; gpt-4o-mini-transcribe</td><td>Describe family photos (looks, never identity) &middot; turn spoken ideas into text</td></tr>
+      </tbody>
+    </table></div>
+
+    <!-- ===================================================== decisions -->
+    <h2 id="lessons">7. Key decisions</h2>
+    <ul>
+      <li><b>Code assigns the family's ideas to pages.</b> The model claimed "page 2 covers the rescue" when no page did.</li>
+      <li><b>One page per writing call, each seeing the story so far.</b> Writing all five at once swapped who rescued whom.</li>
+      <li><b>The judge must quote evidence, and code checks the quote.</b> gpt-3.5 alone passed a story missing half the plot.</li>
+      <li><b>Image prompts are structured shot specs, action first.</b> "Fox helps Bear" was once drawn as Fox running away.</li>
+      <li><b>A cast sheet is painted first and shared with every page.</b> Parallel pages otherwise drifted (a robot became a hedgehog).</li>
+      <li><b>Each page gets one new event, checked in code.</b> Testing showed a lesson being taught twice; whole-story and page-by-page writing were compared and neither won clearly.</li>
+    </ul>
+    <p class="caption" id="timing-note">The book opens as soon as the text passes review; narration and pictures follow in parallel.</p>
+    <p class="doc-end"><a href="index.html#create" class="btn btn-primary btn-lg">Create a story</a>
+      <a href="index.html" class="btn btn-ghost btn-lg">Back to the app</a></p>
+  </main>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+    mermaid.initialize({
+      startOnLoad: true, securityLevel: "strict", theme: "base",
+      themeVariables: { fontFamily: "Nunito, system-ui, sans-serif", fontSize: "14px", primaryColor: "#fffdf7",
+        primaryBorderColor: "#2c221e", lineColor: "#5d4f47", textColor: "#2c221e", clusterBkg: "#fbf6ea", clusterBorder: "#e4d8c3",
+        actorBkg: "#fdf0d8", actorBorder: "#b97a17", noteBkgColor: "#dcefe9", noteBorderColor: "#1f5b57" },
+    });
+
+  </script>
+</body>
+</html>

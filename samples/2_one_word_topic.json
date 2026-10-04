@@ -1,0 +1,306 @@
+{
+  "request": "dinosaurs",
+  "title": "The Jungle Treasure Hunt",
+  "moral": "T-Rex and Steggy learned that friends make adventures more fun.",
+  "refrain": "Brave hearts, wise minds",
+  "category": "adventure",
+  "brief": {
+    "category": "adventure",
+    "pages": 5,
+    "setting": "a lush jungle filled with ancient ruins",
+    "tone": "exciting and mysterious",
+    "characters": [
+      {
+        "name": "T-Rex",
+        "kind": "a mighty dinosaur with sharp teeth",
+        "trait": "brave and curious",
+        "pronoun": "he"
+      },
+      {
+        "name": "Steggy",
+        "kind": "a gentle herbivore with spiked plates",
+        "trait": "kind-hearted and wise",
+        "pronoun": "she"
+      }
+    ],
+    "must_include": [],
+    "moral": "Exploring new places with friends can lead to exciting discoveries and shared treasures.",
+    "safety": {
+      "ok": true,
+      "concerns": [],
+      "reframe": ""
+    }
+  },
+  "plan": {
+    "title": "The Jungle Treasure Hunt",
+    "refrain": "Brave hearts, wise minds",
+    "characters": [
+      {
+        "name": "T-Rex",
+        "pronoun": "he",
+        "look": "a mighty dinosaur with sharp teeth, towering over the trees, bright green scales with orange stripes, wearing a tattered explorer's hat"
+      },
+      {
+        "name": "Steggy",
+        "pronoun": "she",
+        "look": "a gentle herbivore with spiked plates, walking gracefully, soft lavender skin with silver accents, carrying a glowing crystal pendant"
+      }
+    ],
+    "pages": [
+      {
+        "beat": "Setup",
+        "new": "The lush jungle with ancient ruins",
+        "events": "In the lush jungle with ancient ruins, T-Rex and Steggy plan a treasure hunt.",
+        "feeling": "Excitement and anticipation",
+        "picture": "T-Rex and Steggy looking at an old treasure map under a big, ancient tree",
+        "must_show": []
+      },
+      {
+        "beat": "Trouble",
+        "new": "The mysterious hidden entrance",
+        "events": "They find the entrance, but it's hidden. T-Rex wants to charge in, but Steggy suggests a careful search.",
+        "feeling": "Tension and disagreement",
+        "picture": "T-Rex roaring at a solid wall covered in vines, while Steggy gently taps the wall with her tail, looking thoughtful",
+        "must_show": []
+      },
+      {
+        "beat": "Rising",
+        "new": "The riddle-guarded chamber",
+        "events": "Inside, a chamber with a riddle-locked door appears. T-Rex tries force, but Steggy solves it with a wise answer.",
+        "feeling": "Hope and determination",
+        "picture": "Steggy whispering the answer to a glowing door, while T-Rex looks impressed",
+        "must_show": []
+      },
+      {
+        "beat": "Turn",
+        "new": "The shared treasure",
+        "events": "They find a chamber full of glowing crystals. T-Rex wants them all, but Steggy shares, showing the true treasure is friendship.",
+        "feeling": "Warmth and generosity",
+        "picture": "Steggy and T-Rex sitting together, each holding a glowing crystal, smiling at each other",
+        "must_show": []
+      },
+      {
+        "beat": "Home",
+        "new": "The journey back with shared memories",
+        "events": "As they journey back, T-Rex and Steggy reminisce about their adventure, grateful for their shared memories and newfound friendship.",
+        "feeling": "Contentment and companionship",
+        "picture": "T-Rex and Steggy walking side by side under the moonlit sky, exchanging stories",
+        "must_show": []
+      }
+    ],
+    "moral": "Exploring new places with friends can lead to exciting discoveries and shared treasures."
+  },
+  "characters": [
+    {
+      "name": "T-Rex",
+      "pronoun": "he",
+      "look": "a mighty dinosaur with sharp teeth, towering over the trees, bright green scales with orange stripes, wearing a tattered explorer's hat"
+    },
+    {
+      "name": "Steggy",
+      "pronoun": "she",
+      "look": "a gentle herbivore with spiked plates, walking gracefully, soft lavender skin with silver accents, carrying a glowing crystal pendant"
+    }
+  ],
+  "pages": [
+    {
+      "text": "In the lush jungle with ancient ruins, T-Rex and Steggy huddled together. T-Rex beamed with excitement, Steggy smiled with anticipation. 'Brave hearts, wise minds,' T-Rex declared. They whispered about the adventure ahead, their spirits high. The ancient ruins hummed with hidden wonders, fueling their excitement. Steggy's skin shimmered in the sunlight, a beacon of hope.",
+      "beat": "Setup",
+      "feeling": "Excitement and anticipation",
+      "picture": "T-Rex and Steggy looking at an old treasure map under a big, ancient tree",
+      "moment": "T-Rex and Steggy looking at an old treasure map under a big, ancient tree"
+    },
+    {
+      "text": "T-Rex and Steggy stumbled upon a hidden entrance. T-Rex wanted to rush in, but Steggy suggested a careful search instead. 'Let's check everywhere,' Steggy said, peering around. T-Rex pawed the ground eagerly, ready to explore. Steggy's eyes darted, searching for clues. As they debated, a sense of mystery hung in the air between them.",
+      "beat": "Trouble",
+      "feeling": "Tension and disagreement",
+      "picture": "T-Rex roaring at a solid wall covered in vines, while Steggy gently taps the wall with her tail, looking thoughtful",
+      "moment": "T-Rex roaring at a solid wall covered in vines, while Steggy gently taps the wall with her tail, looking thoughtful"
+    },
+    {
+      "text": "T-Rex and Steggy found a room with a tricky door. T-Rex roared, 'I'll open it!' Steggy said, 'Wait, let me try.' Steggy whispered her answer. The door opened, showing a glowing path. 'Brave hearts, wise minds,' T-Rex said. They walked ahead, ready for the new challenge.",
+      "beat": "Rising",
+      "feeling": "Hope and determination",
+      "picture": "Steggy whispering the answer to a glowing door, while T-Rex looks impressed",
+      "moment": "Steggy whispering the answer to a glowing door, while T-Rex looks impressed"
+    },
+    {
+      "text": "T-Rex's eyes widened as they entered a chamber filled with shimmering crystals. He gasped, 'Look at all these treasures!' T-Rex reached out eagerly, wanting them all. Steggy touched his arm gently, 'Wait, my friend.' She picked up a crystal, its light reflecting in her eyes. 'Here,' Steggy said, 'take this one.' T-Rex hesitated, then smiled, 'Thank you, Steggy.' They shared a moment of warmth and generosity, realizing the true treasure was their friendship.",
+      "beat": "Turn",
+      "feeling": "Warmth and generosity",
+      "picture": "Steggy and T-Rex sitting together, each holding a glowing crystal, smiling at each other",
+      "moment": "Steggy and T-Rex sitting together, each holding a glowing crystal, smiling at each other"
+    },
+    {
+      "text": "T-Rex and Steggy walked and talked in the jungle. 'Remember the riddle?' Steggy asked. T-Rex nodded, 'Brave hearts, wise minds!' The sun set, making pretty colors. 'Look!' Steggy said, pointing up. T-Rex smiled, 'Beautiful, like our friendship.' Near home, the moon rose. T-Rex and Steggy felt happy and warm.",
+      "beat": "Home",
+      "feeling": "Contentment and companionship",
+      "picture": "T-Rex and Steggy walking side by side under the moonlit sky, exchanging stories",
+      "moment": "T-Rex and Steggy walking side by side under the moonlit sky, exchanging stories"
+    }
+  ],
+  "reviews": [
+    {
+      "scores": {
+        "age_fit": 2,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 4,
+        "moral": 5
+      },
+      "total": 31,
+      "passed": false,
+      "blocking": 2,
+      "fixes": [
+        "Page 1: split this 17-word sentence into two short ones: \"In the lush jungle with ancient ruins, T-Rex and Steggy huddled together, planning a treasure hunt.\"",
+        "Page 5 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").",
+        "Page 1: Simplify the sentence structure and use simpler words to make it more accessible for young children.",
+        "Page 2: Replace the word 'tension' with a more concrete description that children can easily understand.",
+        "Page 5: Replace abstract phrases with more concrete language that young children can relate to.",
+        "Page 1 reads at grade 8.2; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 2: replace these stock or grown-up phrases with something concrete a child can picture: tension.",
+        "Page 2 reads at grade 6.3; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 3 reads at grade 6.9; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 5: replace these stock or grown-up phrases with something concrete a child can picture: hearts full, newfound, side by side."
+      ],
+      "checklist": [],
+      "logic": [],
+      "weaknesses": [
+        "Page 1: The sentence structure and vocabulary are too complex for a 5-year-old.",
+        "Page 2: The use of the word 'tension' may not be easily understood by younger children.",
+        "Page 5: The use of phrases like 'hearts full' and 'side by side' may be too abstract for young children."
+      ],
+      "summary": "The Jungle Treasure Hunt is a heartwarming tale of friendship and discovery, but some parts may be too complex for younger children to fully grasp.",
+      "best_line": "T-Rex marveled at Steggy's wisdom, realizing the true treasure of their friendship.",
+      "evidence": {
+        "age_fit": "The sentence structure and vocabulary on Page 1 are too complex for a 5-year-old.",
+        "comfort": "...",
+        "arc": "...",
+        "fidelity": "...",
+        "heart": "...",
+        "read_aloud": "...",
+        "moral": "..."
+      },
+      "metrics": {
+        "avg_reading_grade": 6.0,
+        "words_per_page": [
+          91,
+          57,
+          85,
+          81,
+          97
+        ],
+        "refrain_pages": 3
+      },
+      "round": 1
+    },
+    {
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "total": 35,
+      "passed": true,
+      "blocking": 0,
+      "fixes": [
+        "Page 1 reads at grade 6.2; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 2: replace these stock or grown-up phrases with something concrete a child can picture: a sense of."
+      ],
+      "checklist": [],
+      "logic": [],
+      "weaknesses": [],
+      "summary": "A heartwarming tale of friendship and adventure that captivates young readers and imparts a valuable lesson, making it a delightful bedtime story for children.",
+      "best_line": "They shared a moment of warmth and generosity, realizing the true treasure was their friendship.",
+      "evidence": {
+        "age_fit": "The story features simple language and short sentences that are suitable for children aged 5 to 10.",
+        "comfort": "The story is safe for bedtime, with no frightening or sad elements.",
+        "arc": "The story follows a clear arc with a beginning, trouble, rising tension, turning point, and calm ending on each page.",
+        "fidelity": "The story includes the idea of exploring new places with friends leading to exciting discoveries and shared treasures, as requested by the family.",
+        "heart": "The characters of T-Rex and Steggy are distinct, with T-Rex being eager and impulsive while Steggy is cautious and clever.",
+        "read_aloud": "The story includes dialogue, a repeated phrase ('Brave hearts, wise minds'), and descriptive language that make it engaging for a parent to perform.",
+        "moral": "The lesson of exploring new places with friends leading to exciting discoveries and shared treasures is shown through the actions of T-Rex and Steggy, without being preachy."
+      },
+      "metrics": {
+        "avg_reading_grade": 5.0,
+        "words_per_page": [
+          59,
+          58,
+          68,
+          81,
+          85
+        ],
+        "refrain_pages": 3
+      },
+      "round": 2
+    }
+  ],
+  "final_review": {
+    "scores": {
+      "age_fit": 5,
+      "comfort": 5,
+      "arc": 5,
+      "fidelity": 5,
+      "heart": 5,
+      "read_aloud": 5,
+      "moral": 5
+    },
+    "total": 35,
+    "passed": true,
+    "blocking": 0,
+    "fixes": [
+      "Page 1 reads at grade 6.2; use shorter sentences and simpler words (target grade 2-3).",
+      "Page 2: replace these stock or grown-up phrases with something concrete a child can picture: a sense of."
+    ],
+    "checklist": [],
+    "logic": [],
+    "weaknesses": [],
+    "summary": "A heartwarming tale of friendship and adventure that captivates young readers and imparts a valuable lesson, making it a delightful bedtime story for children.",
+    "best_line": "They shared a moment of warmth and generosity, realizing the true treasure was their friendship.",
+    "evidence": {
+      "age_fit": "The story features simple language and short sentences that are suitable for children aged 5 to 10.",
+      "comfort": "The story is safe for bedtime, with no frightening or sad elements.",
+      "arc": "The story follows a clear arc with a beginning, trouble, rising tension, turning point, and calm ending on each page.",
+      "fidelity": "The story includes the idea of exploring new places with friends leading to exciting discoveries and shared treasures, as requested by the family.",
+      "heart": "The characters of T-Rex and Steggy are distinct, with T-Rex being eager and impulsive while Steggy is cautious and clever.",
+      "read_aloud": "The story includes dialogue, a repeated phrase ('Brave hearts, wise minds'), and descriptive language that make it engaging for a parent to perform.",
+      "moral": "The lesson of exploring new places with friends leading to exciting discoveries and shared treasures is shown through the actions of T-Rex and Steggy, without being preachy."
+    },
+    "metrics": {
+      "avg_reading_grade": 5.0,
+      "words_per_page": [
+        59,
+        58,
+        68,
+        81,
+        85
+      ],
+      "refrain_pages": 3
+    },
+    "round": 2
+  },
+  "used_references": false,
+  "handoffs": [
+    {
+      "from": "Ranganathan (intake)",
+      "to": "Uncle Pie (planner)",
+      "prompt": "A adventure story, 5 pages. Must include: (free plot). Lesson: Exploring new places with friends can lead to exciting discoveries and shared treasures."
+    },
+    {
+      "from": "Uncle Pie (planner)",
+      "to": "Uncle Pie (writer)",
+      "prompt": "Page 1: In the lush jungle with ancient ruins, T-Rex and Steggy plan a treasure hunt. | Page 2: They find the entrance, but it's hidden. T-Rex wants to charge in, but Steggy suggests a careful search. | Page 3: Inside, a chamber with a riddle-locked door appears. T-Rex tries force, but Steggy solves it with a wise answer. | Page 4: They find a chamber full of glowing crystals. T-Rex wants them all, but Steggy shares, showing the true treasure is friendship. | Page 5: As they journey back, T-Rex and Steggy reminisce about their adventure, grateful for their shared memories and newfound friendship."
+    },
+    {
+      "from": "Vishnu",
+      "to": "Uncle Pie (writer)",
+      "prompt": "- Page 1: split this 17-word sentence into two short ones: \"In the lush jungle with ancient ruins, T-Rex and Steggy huddled together, planning a treasure hunt.\"\n- Page 5 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").\n- Page 1: Simplify the sentence structure and use simpler words to make it more accessible for young children.\n- Page 2: Replace the word 'tension' with a more concrete description that children can easily understand.\n- Page 5: Replace abstract phrases with more concrete language that young children can relate to.\n- Page 1 reads at grade 8.2; use shorter sentences and simpler words (target grade 2-3).\n- Page 2: replace these stock or grown-up phrases with something concrete a child can picture: tension.\n- Page 2 reads at grade 6.3; use shorter sentences and simpler words (target grade 2-3).\n- Page 3 reads at grade 6.9; use shorter sentences and simpler words (target grade 2-3).\n- Page 5: replace these stock or grown-up phrases with something concrete a child can picture: hearts full, newfound, side by side."
+    }
+  ]
+}

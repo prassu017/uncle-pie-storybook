@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uncle Pie's Storybook</title>
+  <meta name="description" content="Bedtime stories for ages 5 to 10, written by Uncle Pie, checked by his editor Vishnu, painted and read aloud while you listen.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M8 14c8-4 16-4 24 2v38c-8-6-16-6-24-2z' fill='%23e3a33b'/%3E%3Cpath d='M56 14c-8-4-16-4-24 2v38c8-6 16-6 24-2z' fill='%232f7d78'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Caveat:wght@600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Displacement filter used by draw.js for the "wet paint" wobble -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="wet" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="3" result="n"/>
+      <feDisplacementMap id="wet-disp" in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="#" data-go="home" aria-label="Uncle Pie's Storybook, home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 14c8-4 16-4 24 2v38c-8-6-16-6-24-2z" fill="var(--saffron)"/><path d="M56 14c-8-4-16-4-24 2v38c8-6 16-6 24-2z" fill="var(--teal)"/></svg>
+      <span>Uncle Pie's <em>Storybook</em></span>
+    </a>
+    <nav>
+      <a href="#how" class="navlink">How it works</a>
+      <a href="architecture.html" class="navlink">How it's built</a>
+      <button class="btn btn-ghost" data-go="shelf">My bookshelf</button>
+      <button class="btn btn-primary" data-go="create">Create a story</button>
+    </nav>
+  </header>
+
+  <!-- ============================================================ HOME -->
+  <main id="view-home" class="view active">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Bedtime stories for ages 5 to 10</p>
+        <h1>Tell Uncle Pie an idea.<br><span>Watch it become a picture book.</span></h1>
+        <p class="lede">Type it, say it out loud, or show a photo of your favourite people and pets.
+          Uncle Pie writes the story, his editor Vishnu checks every page, and the pictures paint
+          themselves while Uncle Pie reads to you.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" data-go="create">Create a story</button>
+          <button class="btn btn-ghost btn-lg" id="open-demo">Read the demo book</button>
+        </div>
+      </div>
+      <figure class="hero-book" aria-label="Demo: a page painting itself">
+        <div class="mini-book">
+          <canvas id="demo-canvas" width="900" height="900"></canvas>
+          <figcaption id="demo-caption" class="mini-caption"></figcaption>
+        </div>
+        <div class="demo-note">Demo: <em id="demo-title">The Bear and the Fox</em> · painting page <span id="demo-page">1</span></div>
+      </figure>
+    </section>
+
+    <section class="ways" aria-labelledby="ways-h">
+      <h2 id="ways-h">Three ways to begin</h2>
+      <div class="ways-grid">
+        <article class="way">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="8" width="32" height="32" rx="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M15 18h18M15 25h18M15 32h11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          <h3>Type it</h3>
+          <p>One line or a whole plot. "A bear and a fox who don't get along..." Uncle Pie keeps every idea you give him.</p>
+        </article>
+        <article class="way">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="18" y="6" width="12" height="22" rx="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M11 22a13 13 0 0 0 26 0M24 35v7" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/></svg>
+          <h3>Say it</h3>
+          <p>Tap the microphone and tell the story roughly, the way kids do. Uncle Pie listens and tidies it up.</p>
+        </article>
+        <article class="way">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="5" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="18" cy="21" r="4" fill="currentColor"/><path d="M8 36l11-10 8 7 6-5 9 8" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+          <h3>Show it</h3>
+          <p>Add up to three photos: your child, a grandparent, the family cat. The characters will be inspired by them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how" id="how" aria-labelledby="how-h">
+      <h2 id="how-h">Inside the workshop</h2>
+      <p class="how-sub">Every story goes through the same careful steps. You can watch them happen.</p>
+      <ol class="flow">
+        <li><b>You</b><span>idea, voice or photos</span></li>
+        <li><b>Uncle Pie listens</b><span>finds the kind of story, your must-have moments, and the lesson</span></li>
+        <li><b>Uncle Pie plans</b><span>a five-beat arc with your ideas pinned to pages</span></li>
+        <li><b>Uncle Pie writes</b><span>short read-aloud sentences, dialogue, a refrain to join in on</span></li>
+        <li class="loop"><b>Vishnu reviews</b><span>seven checks, quote-verified fidelity, reading-level maths. Sends notes back until it's right</span></li>
+        <li><b>Painted &amp; narrated</b><span>ink lines, then watercolour, then Uncle Pie's voice</span></li>
+      </ol>
+      <p class="privacy">Photos are sent to OpenAI only to draw your book. This app never stores them.</p>
+    </section>
+  </main>
+
+  <!-- ========================================================== CREATE -->
+  <main id="view-shelf" class="view" aria-labelledby="shelf-h">
+    <section class="shelf-wrap">
+      <h1 id="shelf-h">My bookshelf</h1>
+      <p class="hint">Every book you make is kept here so you can read it again. Books are saved in this browser only.</p>
+      <div class="shelf" id="shelf"></div>
+    </section>
+  </main>
+
+  <main id="view-create" class="view" aria-labelledby="create-h">
+    <section class="composer">
+      <h1 id="create-h">What should tonight's story be about?</h1>
+      <p class="hint">Write as much or as little as you like. Uncle Pie will keep every idea.</p>
+      <div class="input-card">
+        <textarea id="idea" rows="6" maxlength="2000" placeholder="A shy little elephant who is scared of the dark, and her friend the firefly who helps her..."></textarea>
+        <div class="input-tools">
+          <button class="tool" id="mic" type="button" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <span id="mic-label">Say it</span>
+          </button>
+          <label class="tool" for="photos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="2"/><path d="M4 18l5-4 4 3 3-2 4 3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <span>Add photos</span>
+          </label>
+          <input type="file" id="photos" accept="image/*" multiple hidden>
+          <span class="count" id="count">0 / 2000</span>
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+      </div>
+      <div class="chips" aria-label="Story ideas">
+        <button class="chip">A dragon who is afraid of fire</button>
+        <button class="chip">Grandma's cat goes to the moon</button>
+        <button class="chip">Two penguins who can't agree on anything</button>
+        <button class="chip">A little robot learning to make friends</button>
+      </div>
+      <p class="privacy small">Photos are sent to OpenAI only to draw your book. This app never stores them. Please only add photos you have permission to use.</p>
+      <button class="btn btn-primary btn-lg" id="go">Ask Uncle Pie</button>
+      <p class="error" id="create-error" role="alert"></p>
+    </section>
+  </main>
+
+  <!-- ======================================================== WORKSHOP -->
+  <main id="view-workshop" class="view" aria-live="polite">
+    <section class="workshop">
+      <h1>In Uncle Pie's workshop</h1>
+      <p class="hint">Uncle Pie writes, Vishnu edits. This takes about a minute.</p>
+      <ol class="log" id="log"></ol>
+    </section>
+  </main>
+
+  <!-- ============================================================ BOOK -->
+  <main id="view-book" class="view">
+    <section class="book-wrap">
+      <h1 class="book-title" id="book-title"></h1>
+      <div class="studio" id="studio" hidden></div>
+      <div class="book">
+        <div class="page page-text">
+          <div class="beat" id="beat"></div>
+          <p class="story-text" id="story-text"></p>
+          <div class="page-num" id="page-num"></div>
+        </div>
+        <div class="page page-art">
+          <canvas id="art" width="1024" height="1024" aria-label="Illustration"></canvas>
+          <div class="painting" id="painting" hidden>
+            <span class="brush"></span><span>Uncle Pie is painting this page...</span>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="btn btn-round" id="prev" aria-label="Previous page">&#8592;</button>
+        <button class="btn btn-primary" id="play" aria-pressed="false">Read to me</button>
+        <button class="btn btn-round" id="next" aria-label="Next page">&#8594;</button>
+      </div>
+      <div class="dots" id="dots"></div>
+
+      <section class="after" id="after" hidden>
+        <div class="feedback">
+          <h2>Want to change something?</h2>
+          <p class="hint">"Make the fox funnier", "add a baby elephant", "shorter please"...</p>
+          <div class="fb-row">
+            <input id="feedback" maxlength="600" placeholder="Tell Uncle Pie what to change">
+            <button class="btn btn-primary" id="revise">Rewrite it</button>
+          </div>
+        </div>
+        <details class="notes">
+          <summary>Vishnu's editing notes</summary>
+          <div id="notes"></div>
+        </details>
+        <button class="btn btn-ghost" data-go="create">Make another story</button>
+      </section>
+    </section>
+  </main>
+
+  <div class="modal" id="pass-modal" hidden>
+    <form class="modal-card" id="pass-form">
+      <h2>Passcode, please</h2>
+      <p>This demo spends real credits, so it is locked. Ask Prasanna for the passcode.</p>
+      <input id="pass-input" type="password" autocomplete="off" required>
+      <button class="btn btn-primary">Unlock</button>
+    </form>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

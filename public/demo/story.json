@@ -1,0 +1,556 @@
+{
+  "request": "I want a story about a bear and a fox who don't get along. As they grow up they realize they are both part of the same jungle, the same ecosystem, so it is good to be friends. In a natural calamity the bear saves the fox, and then when the bear gets trapped under a fallen tree, the fox saves the bear. The moral: everyone comes from a different background and life can be difficult, but we should all be kind and helpful to each other to live a happy life.",
+  "title": "Bear and Fox: A Tale of Friendship",
+  "moral": "Bear and Fox learned that helping your friends, even if you're different, is the best.",
+  "refrain": "Same jungle, same sky",
+  "category": "fable",
+  "brief": {
+    "category": "fable",
+    "pages": 5,
+    "setting": "a lush jungle",
+    "tone": "heartwarming and adventurous",
+    "characters": [
+      {
+        "name": "Bear",
+        "kind": "a big brown bear",
+        "trait": "strong and protective"
+      },
+      {
+        "name": "Fox",
+        "kind": "a sleek red fox",
+        "trait": "clever and quick"
+      }
+    ],
+    "must_include": [
+      "Bear and Fox don't get along",
+      "they grow up and realize they are part of the same jungle",
+      "Bear saves Fox in a natural calamity",
+      "Fox saves Bear when Bear is trapped under a fallen tree"
+    ],
+    "moral": "Even if we are different, being kind and helpful to each other makes life better.",
+    "safety": {
+      "ok": true,
+      "concerns": [],
+      "reframe": ""
+    }
+  },
+  "plan": {
+    "title": "Bear and Fox: A Tale of Friendship",
+    "refrain": "Same jungle, same sky",
+    "characters": [
+      {
+        "name": "Bear",
+        "look": "a big brown bear, strong and protective, with a red scarf around his neck"
+      },
+      {
+        "name": "Fox",
+        "look": "a sleek red fox, clever and quick, with a golden pendant on his tail"
+      }
+    ],
+    "pages": [
+      {
+        "beat": "Setup",
+        "new": "Bear and Fox meet",
+        "events": "Bear and Fox argue over a berry bush, each claiming it as their own.",
+        "feeling": "Conflict",
+        "picture": "Bear and Fox glaring at each other by the berry bush",
+        "must_show": [
+          "Bear and Fox don't get along"
+        ]
+      },
+      {
+        "beat": "Free",
+        "new": "Bonding over shared interests",
+        "events": "Bear and Fox discover they both enjoy watching the sunset from a hill.",
+        "feeling": "Curiosity and connection",
+        "picture": "Bear and Fox sitting side by side on the hill, watching the sunset",
+        "must_show": []
+      },
+      {
+        "beat": "Rising",
+        "new": "Growing up together",
+        "events": "Bear and Fox realize they are part of the same jungle as they explore together.",
+        "feeling": "Wonder and realization",
+        "picture": "Bear and Fox exploring the lush jungle together",
+        "must_show": [
+          "they grow up and realize they are part of the same jungle"
+        ]
+      },
+      {
+        "beat": "Turn",
+        "new": "Act of bravery",
+        "events": "During a storm, Bear saves Fox from a raging river, risking his own life.",
+        "feeling": "Courage and gratitude",
+        "picture": "Bear pulling Fox out of the river under dark storm clouds",
+        "must_show": [
+          "Bear saves Fox in a natural calamity"
+        ]
+      },
+      {
+        "beat": "Home",
+        "new": "Reciprocal rescue",
+        "events": "When a tree falls on Bear, trapping him, Fox cleverly digs him out, showing kindness.",
+        "feeling": "Friendship and unity",
+        "picture": "Fox digging around the fallen tree to rescue Bear",
+        "must_show": [
+          "Fox saves Bear when Bear is trapped under a fallen tree"
+        ]
+      }
+    ],
+    "moral": "Even if we are different, being kind and helpful to each other makes life better."
+  },
+  "characters": [
+    {
+      "name": "Bear",
+      "look": "a big brown bear, strong and protective, with a red scarf around his neck"
+    },
+    {
+      "name": "Fox",
+      "look": "a sleek red fox, clever and quick, with a golden pendant on his tail"
+    }
+  ],
+  "pages": [
+    {
+      "text": "Bear and Fox stood near a berry bush, each claiming it. 'Mine!' growled Bear. 'No, mine!' yipped Fox. 'But this is my bush!' Bear roared. 'No, mine!' Fox insisted. They glared at each other, tails twitching with anger. 'Same jungle, same sky,' whispered Bear, breaking the tension.",
+      "beat": "Setup",
+      "feeling": "Conflict",
+      "picture": "Bear and Fox glaring at each other by the berry bush",
+      "moment": "Bear and Fox don't get along",
+      "audio": "page1.mp3",
+      "audio_check": {
+        "passed": true,
+        "ratio": 1.21,
+        "bytes": 369024
+      },
+      "image": "page1.jpg",
+      "image_check": {
+        "matches_scene": true,
+        "characters_match": true,
+        "no_text": true,
+        "kid_safe": true,
+        "passed": true,
+        "note": "",
+        "what_i_see": "Bear stands tall and angry facing Fox directly, who stands alert and defiant facing Bear near the berry bush.",
+        "revised_scene": "",
+        "redrawn": false
+      },
+      "scene": "MAIN ACTION (the most important thing in the picture): Bear and Fox stand face to face near the berry bush, each claiming it, growling and yipping at each other.\nWHO IS WHERE:\n- Bear: center; standing tall and imposing, facing Fox directly with a fierce expression; looking at Fox; face: angry\n- Fox: center; standing agile and alert, facing Bear directly with a defiant expression; looking at Bear; face: defiant\nSETTING: Inside the jungle near the berry bush, with a few scattered berries on the ground.\nLIGHT: Daytime with dappled sunlight filtering through the trees, casting shadows on the ground.\nCAMERA: Wide establishing shot at eye level to capture the intensity of the confrontation between Bear and Fox.\nMOOD: Tense, confrontational, territorial\nDO NOT SHOW: Bear and Fox looking away from each other, Any signs of physical harm or violence, Additional characters in the scene",
+      "prompt_trail": [
+        {
+          "from": "Uncle Pie",
+          "to": "Caldecott (painter)",
+          "prompt": "MAIN ACTION (the most important thing in the picture): Bear and Fox stand face to face near the berry bush, each claiming it, growling and yipping at each other.\nWHO IS WHERE:\n- Bear: center; standing tall and imposing, facing Fox directly with a fierce expression; looking at Fox; face: angry\n- Fox: center; standing agile and alert, facing Bear directly with a defiant expression; looking at Bear; face: defiant\nSETTING: Inside the jungle near the berry bush, with a few scattered berries on the ground.\nLIGHT: Daytime with dappled sunlight filtering through the trees, casting shadows on the ground.\nCAMERA: Wide establishing shot at eye level to capture the intensity of the confrontation between Bear and Fox.\nMOOD: Tense, confrontational, territorial\nDO NOT SHOW: Bear and Fox looking away from each other, Any signs of physical harm or violence, Additional characters in the scene"
+        }
+      ]
+    },
+    {
+      "text": "Bear and Fox explored the jungle, sniffing at flowers and chasing a butterfly. As the sun dipped low, they found a hill. 'Look, Fox!' Bear pointed. 'The sunset is so pretty.' Fox's eyes gleamed. 'I love watching the colors change,' he said. They sat together, watching the sky turn pink and orange. 'The sky is so big,' Fox whispered. 'It's the same for all of us,' Bear murmured. The sun set, painting the jungle in shadows. Bear and Fox felt a warm connection as the night fell.",
+      "beat": "Free",
+      "feeling": "Curiosity and connection",
+      "picture": "Bear and Fox sitting side by side on the hill, watching the sunset",
+      "moment": "Bear and Fox sitting side by side on the hill, watching the sunset",
+      "audio": "page2.mp3",
+      "audio_check": {
+        "passed": true,
+        "ratio": 1.08,
+        "bytes": 610560
+      },
+      "image": "page2.jpg",
+      "image_check": {
+        "matches_scene": true,
+        "characters_match": true,
+        "no_text": true,
+        "kid_safe": true,
+        "passed": true,
+        "note": "",
+        "what_i_see": "Bear sits relaxed in the center facing right, looking at the sunset; Fox sits close beside Bear, leaning slightly towards him, also looking at the sunset.",
+        "revised_scene": "",
+        "redrawn": false
+      },
+      "scene": "MAIN ACTION (the most important thing in the picture): Bear and Fox sit side by side on the hill, watching the sunset together.\nWHO IS WHERE:\n- Bear: center; sitting down, relaxed; looking at the sunset; face: calm and content\n- Fox: center; sitting down, leaning slightly towards Bear; looking at the sunset; face: happy and fascinated\nSETTING: On a hill in the jungle, with a clear view of the sunset. Flowers and trees around them.\nLIGHT: Dusk, with warm pink and orange hues from the setting sun. Soft, golden light illuminating Bear and Fox.\nCAMERA: Medium shot, slightly low angle to capture both Bear and Fox sitting together on the hill.\nMOOD: Peaceful, connected, serene\nDO NOT SHOW: Any signs of conflict or tension between Bear and Fox, Any other animals in the scene",
+      "prompt_trail": [
+        {
+          "from": "Uncle Pie",
+          "to": "Caldecott (painter)",
+          "prompt": "MAIN ACTION (the most important thing in the picture): Bear and Fox sit side by side on the hill, watching the sunset together.\nWHO IS WHERE:\n- Bear: center; sitting down, relaxed; looking at the sunset; face: calm and content\n- Fox: center; sitting down, leaning slightly towards Bear; looking at the sunset; face: happy and fascinated\nSETTING: On a hill in the jungle, with a clear view of the sunset. Flowers and trees around them.\nLIGHT: Dusk, with warm pink and orange hues from the setting sun. Soft, golden light illuminating Bear and Fox.\nCAMERA: Medium shot, slightly low angle to capture both Bear and Fox sitting together on the hill.\nMOOD: Peaceful, connected, serene\nDO NOT SHOW: Any signs of conflict or tension between Bear and Fox, Any other animals in the scene"
+        }
+      ]
+    },
+    {
+      "text": "Bear and Fox giggled as they wandered deeper into the jungle. Bear pointed to a sparkling stream, 'Look, Fox! This is our jungle.' Fox's eyes widened, 'Wow, our home is big and beautiful.' Bear nodded, 'Same jungle, same sky.' They explored on, feeling wonder at their world.",
+      "beat": "Rising",
+      "feeling": "Wonder and realization",
+      "picture": "Bear and Fox exploring the lush jungle together",
+      "moment": "they grow up and realize they are part of the same jungle",
+      "audio": "page3.mp3",
+      "audio_check": {
+        "passed": true,
+        "ratio": 1.16,
+        "bytes": 354432
+      },
+      "image": "page3.jpg",
+      "image_check": {
+        "matches_scene": true,
+        "characters_match": true,
+        "no_text": true,
+        "kid_safe": true,
+        "passed": true,
+        "note": "",
+        "what_i_see": "Bear stands center, upright, pointing with his left paw toward the sparkling stream, looking at it with awe and happiness; Fox stands next to Bear, also looking at the stream with wide-eyed excitement.",
+        "revised_scene": "",
+        "redrawn": false
+      },
+      "scene": "MAIN ACTION (the most important thing in the picture): Bear and Fox walk side by side, pointing to the sparkling stream with wonder.\nWHO IS WHERE:\n- Bear: center; standing upright, pointing at the stream; looking at the stream; face: expressing awe and happiness\n- Fox: center; standing next to Bear, looking at the stream; looking at the stream; face: wide-eyed with excitement\nSETTING: Deep jungle with lush greenery, a sparkling stream running through the scene\nLIGHT: Late afternoon with dappled sunlight filtering through the canopy\nCAMERA: Close-up shot on the faces and paws of Bear and Fox\nMOOD: Wonder and realization of shared home\nDO NOT SHOW: Any signs of danger or tension, Other characters in the frame",
+      "prompt_trail": [
+        {
+          "from": "Uncle Pie",
+          "to": "Caldecott (painter)",
+          "prompt": "MAIN ACTION (the most important thing in the picture): Bear and Fox walk side by side, pointing to the sparkling stream with wonder.\nWHO IS WHERE:\n- Bear: center; standing upright, pointing at the stream; looking at the stream; face: expressing awe and happiness\n- Fox: center; standing next to Bear, looking at the stream; looking at the stream; face: wide-eyed with excitement\nSETTING: Deep jungle with lush greenery, a sparkling stream running through the scene\nLIGHT: Late afternoon with dappled sunlight filtering through the canopy\nCAMERA: Close-up shot on the faces and paws of Bear and Fox\nMOOD: Wonder and realization of shared home\nDO NOT SHOW: Any signs of danger or tension, Other characters in the frame"
+        }
+      ]
+    },
+    {
+      "text": "The storm roared, rain drumming on leaves. Bear and Fox crouched near the rushing river. Suddenly, Fox slipped, a yelp escaping him. Bear sprang, gripping Fox's tail in his teeth. With a strong tug, Bear hauled Fox to safety. Fox shivered, eyes wide. 'Thank you, Bear,' he whispered, tail tucked. Bear patted Fox's back. 'We're pals, Fox. Pals help out.' The storm quieted, leaving a rainbow above. Bear and Fox sat shoulder to shoulder, feeling thankful for each other's courage.",
+      "beat": "Turn",
+      "feeling": "Courage and gratitude",
+      "picture": "Bear pulling Fox out of the river under dark storm clouds",
+      "moment": "Bear saves Fox in a natural calamity",
+      "audio": "page4.mp3",
+      "audio_check": {
+        "passed": true,
+        "ratio": 1.19,
+        "bytes": 619392
+      },
+      "image": "page4.jpg",
+      "image_check": {
+        "matches_scene": true,
+        "characters_match": true,
+        "no_text": true,
+        "kid_safe": true,
+        "passed": true,
+        "note": "",
+        "what_i_see": "Bear is crouching on the riverbank gripping Fox's tail in his mouth, pulling Fox who is slipping into the rushing river; both face each other with expressions matching the moment.",
+        "revised_scene": "",
+        "redrawn": false
+      },
+      "scene": "MAIN ACTION (the most important thing in the picture): Bear grips Fox's tail in his teeth and pulls him to safety as Fox slips near the rushing river during the storm.\nWHO IS WHERE:\n- Bear: center; crouching, leaning slightly forward; looking at Fox; face: determined and protective\n- Fox: center; slipping, eyes wide with fear; looking at Bear; face: startled and grateful\nSETTING: Near a rushing river in the jungle during a storm, with rain pouring down and a rainbow forming in the sky.\nLIGHT: Dusk with dark storm clouds, a rainbow casting colorful light on the characters.\nCAMERA: Medium-wide shot, slightly above angle to show the action clearly.\nMOOD: Courage, gratitude, and friendship\nDO NOT SHOW: Any signs of injury or pain on the characters, Other animals in the scene distracting from the main action",
+      "prompt_trail": [
+        {
+          "from": "Uncle Pie",
+          "to": "Caldecott (painter)",
+          "prompt": "MAIN ACTION (the most important thing in the picture): Bear grips Fox's tail in his teeth and pulls him to safety as Fox slips near the rushing river during the storm.\nWHO IS WHERE:\n- Bear: center; crouching, leaning slightly forward; looking at Fox; face: determined and protective\n- Fox: center; slipping, eyes wide with fear; looking at Bear; face: startled and grateful\nSETTING: Near a rushing river in the jungle during a storm, with rain pouring down and a rainbow forming in the sky.\nLIGHT: Dusk with dark storm clouds, a rainbow casting colorful light on the characters.\nCAMERA: Medium-wide shot, slightly above angle to show the action clearly.\nMOOD: Courage, gratitude, and friendship\nDO NOT SHOW: Any signs of injury or pain on the characters, Other animals in the scene distracting from the main action"
+        }
+      ]
+    },
+    {
+      "text": "Bear and Fox were exploring when a loud crack made Bear jump. A huge tree crashed down, trapping Bear underneath. 'Bear!' Fox cried, rushing to help. 'I'm stuck, Fox,' Bear winced. Fox's tail flicked as he had an idea. 'Hold on, Bear. I'll dig you out,' Fox declared. He scrambled, dirt flying everywhere. 'Almost there!' Fox panted. With a final push, the tree shifted, freeing Bear. 'Thank you, Fox,' Bear sighed, nuzzling him. 'Same jungle, same sky,' Fox whispered, looking at the twinkling stars above.",
+      "beat": "Home",
+      "feeling": "Friendship and unity",
+      "picture": "Fox digging around the fallen tree to rescue Bear",
+      "moment": "Fox saves Bear when Bear is trapped under a fallen tree",
+      "audio": "page5.mp3",
+      "audio_check": {
+        "passed": true,
+        "ratio": 1.24,
+        "bytes": 685056
+      },
+      "image": "page5.jpg",
+      "image_check": {
+        "matches_scene": true,
+        "characters_match": true,
+        "no_text": true,
+        "kid_safe": true,
+        "passed": true,
+        "note": "",
+        "what_i_see": "Bear lies on his side under the fallen tree, looking at Fox with a relieved and thankful expression, while Fox kneels next to Bear, digging furiously with focused determination, facing Bear.",
+        "revised_scene": "",
+        "redrawn": false
+      },
+      "scene": "MAIN ACTION (the most important thing in the picture): Fox digs furiously under the fallen tree, trying to free Bear trapped underneath.\nWHO IS WHERE:\n- Bear: center; lying on his side, pinned under the fallen tree, looking at Fox with gratitude; looking at Fox; face: relieved and thankful\n- Fox: center; kneeling next to Bear, digging frantically to free him, looking determined; looking at Bear; face: focused and determined\nSETTING: Deep in the jungle, under the shadow of the fallen tree, with scattered dirt and leaves around.\nLIGHT: Dusk, with dim natural light filtering through the canopy, casting dappled shadows.\nCAMERA: Wide shot at a gentle angle to capture the intense moment of Fox trying to rescue Bear.\nMOOD: Tense yet hopeful\nDO NOT SHOW: Other animals in the scene, Bright sunlight that would not match the dusk setting, Exaggerated facial expressions of fear or panic",
+      "prompt_trail": [
+        {
+          "from": "Uncle Pie",
+          "to": "Caldecott (painter)",
+          "prompt": "MAIN ACTION (the most important thing in the picture): Fox digs furiously under the fallen tree, trying to free Bear trapped underneath.\nWHO IS WHERE:\n- Bear: center; lying on his side, pinned under the fallen tree, looking at Fox with gratitude; looking at Fox; face: relieved and thankful\n- Fox: center; kneeling next to Bear, digging frantically to free him, looking determined; looking at Bear; face: focused and determined\nSETTING: Deep in the jungle, under the shadow of the fallen tree, with scattered dirt and leaves around.\nLIGHT: Dusk, with dim natural light filtering through the canopy, casting dappled shadows.\nCAMERA: Wide shot at a gentle angle to capture the intense moment of Fox trying to rescue Bear.\nMOOD: Tense yet hopeful\nDO NOT SHOW: Other animals in the scene, Bright sunlight that would not match the dusk setting, Exaggerated facial expressions of fear or panic"
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 3,
+        "fidelity": 2,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "total": 30,
+      "passed": false,
+      "blocking": 3,
+      "fixes": [
+        "Page 3: Bear acts as if Fox doesn't know they are in the same jungle, but they have been exploring together. (\"'Look, Fox!' Bear exclaimed. 'This is the same jungle we live in!'\"). Fix it so the story makes sense.",
+        "The family asked for this and it is missing: Bear saves Fox in a natural calamity. Add it.",
+        "The family asked for this and it is missing: Fox saves Bear when Bear is trapped under a fallen tree. Add it.",
+        "Page 3: Rewrite the dialogue between Bear and Fox to reflect that they have been exploring the jungle together.",
+        "Page 1: replace these stock or grown-up phrases with something concrete a child can picture: tension.",
+        "Page 4: replace these stock or grown-up phrases with something concrete a child can picture: side by side."
+      ],
+      "checklist": [
+        {
+          "item": "Bear and Fox don't get along",
+          "page": 1,
+          "present": true,
+          "quote": "'Mine!' growled Bear. 'No, mine!' yipped Fox."
+        },
+        {
+          "item": "they grow up and realize they are part of the same jungle",
+          "page": 1,
+          "present": true,
+          "quote": "'Same jungle, same sky,' whispered Bear, breaking the tension."
+        },
+        {
+          "item": "Bear saves Fox in a natural calamity",
+          "page": 0,
+          "present": false,
+          "quote": ""
+        },
+        {
+          "item": "Fox saves Bear when Bear is trapped under a fallen tree",
+          "page": 0,
+          "present": false,
+          "quote": ""
+        }
+      ],
+      "logic": [
+        {
+          "page": 3,
+          "quote": "'Look, Fox!' Bear exclaimed. 'This is the same jungle we live in!'",
+          "problem": "Bear acts as if Fox doesn't know they are in the same jungle, but they have been exploring together."
+        }
+      ],
+      "weaknesses": [
+        "Page 3: Bear acts as if Fox doesn't know they are in the same jungle."
+      ],
+      "summary": "A heartwarming tale of friendship between Bear and Fox that teaches the valuable lesson of kindness and helpfulness, with minor adjustments needed for consistency.",
+      "best_line": "Bear and Fox felt a warm connection as the night fell.",
+      "evidence": {
+        "age_fit": "The story is simple and easy to follow for both 5-year-olds and 10-year-olds.",
+        "comfort": "The story is safe for bedtime, with gentle peril that is resolved.",
+        "arc": "The story has a clear beginning, trouble, rising tension, turning point, and calm ending on each page.",
+        "fidelity": "The story includes the family's requested ideas, but misses the part where Bear saves Fox in a natural calamity and Fox saves Bear from a fallen tree.",
+        "heart": "The characters of Bear and Fox are distinct, and the reader can care about their friendship.",
+        "read_aloud": "The story has rhythm, sound words, dialogue, and a repeated phrase, making it fun for a parent to perform.",
+        "moral": "The moral is shown through the actions of Bear and Fox, and it is short and not preachy."
+      },
+      "metrics": {
+        "avg_reading_grade": 1.6,
+        "words_per_page": [
+          52,
+          92,
+          70,
+          86,
+          91
+        ],
+        "refrain_pages": 3
+      },
+      "round": 1
+    },
+    {
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "total": 35,
+      "passed": true,
+      "blocking": 0,
+      "fixes": [
+        "Page 1: replace these stock or grown-up phrases with something concrete a child can picture: tension."
+      ],
+      "checklist": [
+        {
+          "item": "Bear and Fox don't get along",
+          "page": 1,
+          "present": true,
+          "quote": "'Mine!' growled Bear. 'No, mine!' yipped Fox."
+        },
+        {
+          "item": "they grow up and realize they are part of the same jungle",
+          "page": 1,
+          "present": true,
+          "quote": "'Same jungle, same sky,' whispered Bear, breaking the tension."
+        },
+        {
+          "item": "Bear saves Fox in a natural calamity",
+          "page": 4,
+          "present": true,
+          "quote": "With a strong tug, Bear hauled Fox to safety."
+        },
+        {
+          "item": "Fox saves Bear when Bear is trapped under a fallen tree",
+          "page": 5,
+          "present": true,
+          "quote": "'Hold on, Bear. I'll dig you out,' Fox declared."
+        }
+      ],
+      "logic": [],
+      "weaknesses": [],
+      "summary": "A heartwarming tale of friendship between Bear and Fox that beautifully conveys the message of kindness and helpfulness, perfect for bedtime reading.",
+      "best_line": "Bear and Fox felt a warm connection as the night fell.",
+      "evidence": {
+        "age_fit": "The story is simple and easy to follow for both 5-year-olds and 10-year-olds.",
+        "comfort": "The story is gentle, with no frightening or sad elements left hanging.",
+        "arc": "The story has a clear beginning, trouble, rising tension, turning point, and calm ending on each page.",
+        "fidelity": "All the ideas requested by the family happen in the story in the correct order.",
+        "heart": "Bear and Fox have distinct personalities, and the reader can care about their friendship.",
+        "read_aloud": "The story has rhythm, sound words, dialogue, and a repeated phrase, making it fun for a parent to perform.",
+        "moral": "The lesson of being kind and helpful to each other is shown through the actions of Bear and Fox."
+      },
+      "metrics": {
+        "avg_reading_grade": 1.8,
+        "words_per_page": [
+          52,
+          92,
+          50,
+          82,
+          91
+        ],
+        "refrain_pages": 3
+      },
+      "round": 2
+    }
+  ],
+  "final_review": {
+    "scores": {
+      "age_fit": 5,
+      "comfort": 5,
+      "arc": 5,
+      "fidelity": 5,
+      "heart": 5,
+      "read_aloud": 5,
+      "moral": 5
+    },
+    "total": 35,
+    "passed": true,
+    "blocking": 0,
+    "fixes": [
+      "Page 1: replace these stock or grown-up phrases with something concrete a child can picture: tension."
+    ],
+    "checklist": [
+      {
+        "item": "Bear and Fox don't get along",
+        "page": 1,
+        "present": true,
+        "quote": "'Mine!' growled Bear. 'No, mine!' yipped Fox."
+      },
+      {
+        "item": "they grow up and realize they are part of the same jungle",
+        "page": 1,
+        "present": true,
+        "quote": "'Same jungle, same sky,' whispered Bear, breaking the tension."
+      },
+      {
+        "item": "Bear saves Fox in a natural calamity",
+        "page": 4,
+        "present": true,
+        "quote": "With a strong tug, Bear hauled Fox to safety."
+      },
+      {
+        "item": "Fox saves Bear when Bear is trapped under a fallen tree",
+        "page": 5,
+        "present": true,
+        "quote": "'Hold on, Bear. I'll dig you out,' Fox declared."
+      }
+    ],
+    "logic": [],
+    "weaknesses": [],
+    "summary": "A heartwarming tale of friendship between Bear and Fox that beautifully conveys the message of kindness and helpfulness, perfect for bedtime reading.",
+    "best_line": "Bear and Fox felt a warm connection as the night fell.",
+    "evidence": {
+      "age_fit": "The story is simple and easy to follow for both 5-year-olds and 10-year-olds.",
+      "comfort": "The story is gentle, with no frightening or sad elements left hanging.",
+      "arc": "The story has a clear beginning, trouble, rising tension, turning point, and calm ending on each page.",
+      "fidelity": "All the ideas requested by the family happen in the story in the correct order.",
+      "heart": "Bear and Fox have distinct personalities, and the reader can care about their friendship.",
+      "read_aloud": "The story has rhythm, sound words, dialogue, and a repeated phrase, making it fun for a parent to perform.",
+      "moral": "The lesson of being kind and helpful to each other is shown through the actions of Bear and Fox."
+    },
+    "metrics": {
+      "avg_reading_grade": 1.8,
+      "words_per_page": [
+        52,
+        92,
+        50,
+        82,
+        91
+      ],
+      "refrain_pages": 3
+    },
+    "round": 2
+  },
+  "used_references": false,
+  "handoffs": [
+    {
+      "from": "Ranganathan (intake)",
+      "to": "Uncle Pie (planner)",
+      "prompt": "A fable story, 5 pages. Must include: Bear and Fox don't get along; they grow up and realize they are part of the same jungle; Bear saves Fox in a natural calamity; Fox saves Bear when Bear is trapped under a fallen tree. Lesson: Even if we are different, being kind and helpful to each other makes life better."
+    },
+    {
+      "from": "Uncle Pie (planner)",
+      "to": "Uncle Pie (writer)",
+      "prompt": "Page 1: Bear and Fox argue over a berry bush, each claiming it as their own. | Page 2: Bear and Fox discover they both enjoy watching the sunset from a hill. | Page 3: Bear and Fox realize they are part of the same jungle as they explore together. | Page 4: During a storm, Bear saves Fox from a raging river, risking his own life. | Page 5: When a tree falls on Bear, trapping him, Fox cleverly digs him out, showing kindness."
+    },
+    {
+      "from": "Vishnu",
+      "to": "Uncle Pie (writer)",
+      "prompt": "- Page 3: Bear acts as if Fox doesn't know they are in the same jungle, but they have been exploring together. (\"'Look, Fox!' Bear exclaimed. 'This is the same jungle we live in!'\"). Fix it so the story makes sense.\n- The family asked for this and it is missing: Bear saves Fox in a natural calamity. Add it.\n- The family asked for this and it is missing: Fox saves Bear when Bear is trapped under a fallen tree. Add it.\n- Page 3: Rewrite the dialogue between Bear and Fox to reflect that they have been exploring the jungle together.\n- Page 1: replace these stock or grown-up phrases with something concrete a child can picture: tension.\n- Page 4: replace these stock or grown-up phrases with something concrete a child can picture: side by side."
+    }
+  ],
+  "timings": {
+    "text": 40,
+    "narration": 47,
+    "pictures": 119
+  },
+  "cast_image": "cast.jpg",
+  "report": {
+    "overall": 100,
+    "text": {
+      "score": 100,
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "passed": true,
+      "blocking": 0,
+      "drafts": 2,
+      "chosen_draft": 2
+    },
+    "fidelity": {
+      "found": 4,
+      "asked": 4
+    },
+    "reading_grade": 1.8,
+    "pictures": {
+      "passed": 5,
+      "total": 5,
+      "redrawn": 0
+    },
+    "narration": {
+      "passed": 5,
+      "total": 5
+    }
+  },
+  "moral_audio": "moral.mp3"
+}

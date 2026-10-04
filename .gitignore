@@ -1,0 +1,15 @@
+# secrets: the OpenAI key is read from OPENAI_API_KEY or OPENAI_API_KEY_FILE, never stored here
+.env
+.env.*
+*key*.txt
+
+__pycache__/
+*.pyc
+.vercel/
+.venv/
+venv/
+
+# local scratch
+public/_voices/
+out/
+!.env.example

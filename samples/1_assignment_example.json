@@ -1,0 +1,350 @@
+{
+  "request": "A story about a girl named Alice and her best friend Bob, who happens to be a cat.",
+  "title": "The Treasure of Friendship",
+  "moral": "Alice and Bob saw that being together makes any day better.",
+  "refrain": "Different paths, same heart",
+  "category": "friendship",
+  "brief": {
+    "category": "friendship",
+    "pages": 5,
+    "setting": "a charming village with cobblestone streets and cozy cottages",
+    "tone": "whimsical and heartwarming",
+    "characters": [
+      {
+        "name": "Alice",
+        "kind": "a curious girl with a love for adventure",
+        "trait": "brave",
+        "pronoun": "she"
+      },
+      {
+        "name": "Bob",
+        "kind": "a mischievous cat with a twinkle in his eye",
+        "trait": "playful",
+        "pronoun": "he"
+      }
+    ],
+    "must_include": [
+      "Alice and Bob realize that their friendship is the greatest treasure of all"
+    ],
+    "moral": "True friendship is a treasure that shines brighter than any gem.",
+    "safety": {
+      "ok": true,
+      "concerns": [],
+      "reframe": ""
+    }
+  },
+  "plan": {
+    "title": "The Treasure of Friendship",
+    "refrain": "Different paths, same heart",
+    "characters": [
+      {
+        "name": "Alice",
+        "pronoun": "she",
+        "look": "a curious girl with a love for adventure, wearing a red headband"
+      },
+      {
+        "name": "Bob",
+        "pronoun": "he",
+        "look": "a mischievous cat with a twinkle in his eye, with a purple collar"
+      }
+    ],
+    "pages": [
+      {
+        "beat": "Setup",
+        "new": "Alice meets Bob for the first time",
+        "events": "In a charming village with cobblestone streets, Alice encounters Bob, the playful cat, chasing a butterfly. They exchange curious glances.",
+        "feeling": "Excitement",
+        "picture": "Alice and Bob meeting in the cozy village street",
+        "must_show": []
+      },
+      {
+        "beat": "Trouble",
+        "new": "Bob accidentally ruins Alice's treasure map",
+        "events": "Alice excitedly shows Bob her treasure map, but in his playful antics, Bob accidentally tears it. Alice looks upset, and Bob feels guilty.",
+        "feeling": "Disappointment",
+        "picture": "Bob looking sheepish as Alice holds the torn treasure map",
+        "must_show": []
+      },
+      {
+        "beat": "Rising",
+        "new": "Alice and Bob work together to find the treasure",
+        "events": "Realizing they need each other, Alice and Bob team up to follow the torn map pieces. They encounter obstacles but help each other overcome them.",
+        "feeling": "Determination",
+        "picture": "Alice and Bob navigating through a tricky obstacle together",
+        "must_show": []
+      },
+      {
+        "beat": "Turn",
+        "new": "Alice and Bob discover a box of friendship gems",
+        "events": "At the end of the map, Alice and Bob find a box filled with sparkling gems. They realize that their friendship is the greatest treasure of all.",
+        "feeling": "Joy",
+        "picture": "Alice and Bob opening the box of glowing friendship gems",
+        "must_show": [
+          "Alice and Bob realize that their friendship is the greatest treasure of all"
+        ]
+      },
+      {
+        "beat": "Home",
+        "new": "Alice and Bob share a heartfelt hug",
+        "events": "Grateful for their adventure, Alice and Bob share a warm hug, understanding that true friendship is a treasure that shines brighter than any gem.",
+        "feeling": "Gratitude",
+        "picture": "Alice and Bob hugging under the starlit sky",
+        "must_show": []
+      }
+    ],
+    "moral": "True friendship is a treasure that shines brighter than any gem."
+  },
+  "characters": [
+    {
+      "name": "Alice",
+      "pronoun": "she",
+      "look": "a curious girl with a love for adventure, wearing a red headband"
+    },
+    {
+      "name": "Bob",
+      "pronoun": "he",
+      "look": "a mischievous cat with a twinkle in his eye, with a purple collar"
+    }
+  ],
+  "pages": [
+    {
+      "text": "In a cozy village with winding streets, Alice met Bob, the playful cat, chasing a butterfly. They locked eyes, smiles blooming. Alice felt a spark of excitement, her red headband fluttering. Bob, with a twinkle in his eye, pounced at a colorful flutterer. Their curious glances met, a silent understanding forming. 'Different paths, same heart,' Alice thought, heart dancing with joy.",
+      "beat": "Setup",
+      "feeling": "Excitement",
+      "picture": "Alice and Bob meeting in the cozy village street",
+      "moment": "Alice and Bob meeting in the cozy village street"
+    },
+    {
+      "text": "Excitedly, Alice unrolled her treasure map, her eyes gleaming with excitement. Bob, in his playful leap for the butterfly, accidentally tore the map. Alice's smile faded, her eyes filling with sadness. Bob's ears drooped as he realized his mistake, 'I'm sorry,' he mumbled, tail twitching. Alice sighed, picking up the torn pieces, a frown on her face. She looked at Bob, a mix of disappointment and understanding in her gaze.",
+      "beat": "Trouble",
+      "feeling": "Disappointment",
+      "picture": "Bob looking sheepish as Alice holds the torn treasure map",
+      "moment": "Bob looking sheepish as Alice holds the torn treasure map"
+    },
+    {
+      "text": "Alice and Bob realized they needed each other. They worked together to follow the torn map pieces. Bob helped move a heavy rock, his tail swishing. Alice climbed a steep slope, with Bob meowing support. 'We're a great team,' Alice beamed. Bob purred in agreement. 'Different paths, same heart,' they both said. Their faces showed determination as they found the last piece. Together, they reached the hidden treasure, sparkling gems glinting in the sunlight. Alice and Bob high-fived, hearts beaming with pride and joy.",
+      "beat": "Rising",
+      "feeling": "Determination",
+      "picture": "Alice and Bob navigating through a tricky obstacle together",
+      "moment": "Alice and Bob navigating through a tricky obstacle together"
+    },
+    {
+      "text": "Alice and Bob opened the box, discovering sparkling gems inside. Their eyes widened with wonder as they realized their friendship was the true treasure. 'Look, Bob!' Alice exclaimed, holding a gem up to the sunlight. Bob's tail swished happily as he gazed at the glittering gems. 'We found the best treasure of all,' Bob purred, nuzzling Alice. They both smiled, hearts overflowing with joy.",
+      "beat": "Turn",
+      "feeling": "Joy",
+      "picture": "Alice and Bob opening the box of glowing friendship gems",
+      "moment": "Alice and Bob realize that their friendship is the greatest treasure of all"
+    },
+    {
+      "text": "Grateful for their adventure, Alice and Bob shared a warm hug. They understood that true friendship was a treasure shining brighter than any gem. 'Different paths, same heart,' Bob whispered, eyes sparkling. Alice nodded, a big smile on her face. 'We make a great team,' she said, hugging Bob tightly. Thanking each other, they felt the glow of their bond. 'Thank you, Bob,' Alice said softly. Bob replied, 'Thank you too, Alice.' Together, they found the truest gem in each other's embrace.",
+      "beat": "Home",
+      "feeling": "Gratitude",
+      "picture": "Alice and Bob hugging under the starlit sky",
+      "moment": "Alice and Bob hugging under the starlit sky"
+    }
+  ],
+  "reviews": [
+    {
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "total": 35,
+      "passed": false,
+      "blocking": 3,
+      "fixes": [
+        "Page 4 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").",
+        "Page 5: split this 17-word sentence into two short ones: \"In each other's embrace, they find the truest gem, a friendship that shines brighter than any treasure.\"",
+        "Page 5 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").",
+        "Page 1 reads at grade 6.7; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 2: replace these stock or grown-up phrases with something concrete a child can picture: eyes shining with.",
+        "Page 2 reads at grade 6.5; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 3: replace these stock or grown-up phrases with something concrete a child can picture: hearts full.",
+        "Page 3 reads at grade 5.7; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 5: replace these stock or grown-up phrases with something concrete a child can picture: embrace, gratitude, hearts full, side by side."
+      ],
+      "checklist": [
+        {
+          "item": "Alice and Bob realize that their friendship is the greatest treasure of all",
+          "page": 4,
+          "present": true,
+          "quote": "'We found the best treasure of all,' Bob purrs, nuzzling Alice."
+        }
+      ],
+      "logic": [],
+      "weaknesses": [],
+      "summary": "A heartwarming tale of friendship between Alice and Bob, the cat, that beautifully illustrates the value of true companionship, perfect for bedtime reading.",
+      "best_line": "Alice and Bob high-fived, hearts full of pride and joy.",
+      "evidence": {
+        "age_fit": "The story uses simple language and short sentences that are suitable for children aged 5 to 10.",
+        "comfort": "The story is safe for bedtime, with gentle conflict and a heartwarming resolution.",
+        "arc": "The story follows a clear arc with a beginning, trouble, rising tension, turning point, and a calm ending on each page.",
+        "fidelity": "The story includes the idea that true friendship is a treasure that shines brighter than any gem, as requested by the family.",
+        "heart": "Alice and Bob have distinct personalities, and the reader can empathize with their friendship.",
+        "read_aloud": "The story includes dialogue, a repeated phrase ('Different paths, same heart'), and descriptive language that makes it fun for a parent to perform.",
+        "moral": "The lesson of true friendship being a valuable treasure is shown through the actions of Alice and Bob, without being preachy."
+      },
+      "metrics": {
+        "avg_reading_grade": 5.4,
+        "words_per_page": [
+          62,
+          75,
+          94,
+          66,
+          88
+        ],
+        "refrain_pages": 3
+      },
+      "round": 1
+    },
+    {
+      "scores": {
+        "age_fit": 5,
+        "comfort": 5,
+        "arc": 5,
+        "fidelity": 5,
+        "heart": 5,
+        "read_aloud": 5,
+        "moral": 5
+      },
+      "total": 35,
+      "passed": true,
+      "blocking": 0,
+      "fixes": [
+        "Page 3: Remove one mention of finding the hidden treasure to avoid repetition.",
+        "Page 1 reads at grade 6.7; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 2 reads at grade 6.8; use shorter sentences and simpler words (target grade 2-3).",
+        "Page 5: replace these stock or grown-up phrases with something concrete a child can picture: embrace.",
+        "Page 3: Finding the hidden treasure is mentioned twice. (\"Together, they reached the hidden treasure, sparkling gems glinting in the sunlight.\"). Fix it so the story makes sense."
+      ],
+      "checklist": [
+        {
+          "item": "Alice and Bob realize that their friendship is the greatest treasure of all",
+          "page": 4,
+          "present": true,
+          "quote": "'We found the best treasure of all,' Bob purred, nuzzling Alice."
+        }
+      ],
+      "logic": [
+        {
+          "page": 3,
+          "quote": "Together, they reached the hidden treasure, sparkling gems glinting in the sunlight.",
+          "problem": "Finding the hidden treasure is mentioned twice.",
+          "confirmed": false
+        }
+      ],
+      "weaknesses": [
+        "Page 3: Finding the hidden treasure is mentioned twice."
+      ],
+      "summary": "A heartwarming tale of friendship between Alice and Bob, beautifully illustrating the value of true companionship.",
+      "best_line": "True friendship is a treasure that shines brighter than any gem.",
+      "evidence": {
+        "age_fit": "The story contains simple language and a clear storyline that is suitable for children aged 5 to 10.",
+        "comfort": "The story is safe for bedtime, with gentle conflict and a heartwarming resolution.",
+        "arc": "The story follows a clear arc with a beginning, trouble, rising tension, turning point, and calm ending on each page.",
+        "fidelity": "The story includes the idea that true friendship is a treasure that shines brighter than any gem, as requested by the family.",
+        "heart": "The characters of Alice and Bob are well-developed, and the reader can empathize with their friendship.",
+        "read_aloud": "The story includes dialogue, sound words, and a repeated phrase ('Different paths, same heart'), making it engaging for a parent to read aloud.",
+        "moral": "The moral that true friendship is a treasure is shown through the actions of Alice and Bob, without being preachy."
+      },
+      "metrics": {
+        "avg_reading_grade": 5.2,
+        "words_per_page": [
+          62,
+          71,
+          87,
+          66,
+          86
+        ],
+        "refrain_pages": 3
+      },
+      "round": 2
+    }
+  ],
+  "final_review": {
+    "scores": {
+      "age_fit": 5,
+      "comfort": 5,
+      "arc": 5,
+      "fidelity": 5,
+      "heart": 5,
+      "read_aloud": 5,
+      "moral": 5
+    },
+    "total": 35,
+    "passed": true,
+    "blocking": 0,
+    "fixes": [
+      "Page 3: Remove one mention of finding the hidden treasure to avoid repetition.",
+      "Page 1 reads at grade 6.7; use shorter sentences and simpler words (target grade 2-3).",
+      "Page 2 reads at grade 6.8; use shorter sentences and simpler words (target grade 2-3).",
+      "Page 5: replace these stock or grown-up phrases with something concrete a child can picture: embrace.",
+      "Page 3: Finding the hidden treasure is mentioned twice. (\"Together, they reached the hidden treasure, sparkling gems glinting in the sunlight.\"). Fix it so the story makes sense."
+    ],
+    "checklist": [
+      {
+        "item": "Alice and Bob realize that their friendship is the greatest treasure of all",
+        "page": 4,
+        "present": true,
+        "quote": "'We found the best treasure of all,' Bob purred, nuzzling Alice."
+      }
+    ],
+    "logic": [
+      {
+        "page": 3,
+        "quote": "Together, they reached the hidden treasure, sparkling gems glinting in the sunlight.",
+        "problem": "Finding the hidden treasure is mentioned twice.",
+        "confirmed": false
+      }
+    ],
+    "weaknesses": [
+      "Page 3: Finding the hidden treasure is mentioned twice."
+    ],
+    "summary": "A heartwarming tale of friendship between Alice and Bob, beautifully illustrating the value of true companionship.",
+    "best_line": "True friendship is a treasure that shines brighter than any gem.",
+    "evidence": {
+      "age_fit": "The story contains simple language and a clear storyline that is suitable for children aged 5 to 10.",
+      "comfort": "The story is safe for bedtime, with gentle conflict and a heartwarming resolution.",
+      "arc": "The story follows a clear arc with a beginning, trouble, rising tension, turning point, and calm ending on each page.",
+      "fidelity": "The story includes the idea that true friendship is a treasure that shines brighter than any gem, as requested by the family.",
+      "heart": "The characters of Alice and Bob are well-developed, and the reader can empathize with their friendship.",
+      "read_aloud": "The story includes dialogue, sound words, and a repeated phrase ('Different paths, same heart'), making it engaging for a parent to read aloud.",
+      "moral": "The moral that true friendship is a treasure is shown through the actions of Alice and Bob, without being preachy."
+    },
+    "metrics": {
+      "avg_reading_grade": 5.2,
+      "words_per_page": [
+        62,
+        71,
+        87,
+        66,
+        86
+      ],
+      "refrain_pages": 3
+    },
+    "round": 2
+  },
+  "used_references": false,
+  "handoffs": [
+    {
+      "from": "Ranganathan (intake)",
+      "to": "Uncle Pie (planner)",
+      "prompt": "A friendship story, 5 pages. Must include: Alice and Bob realize that their friendship is the greatest treasure of all. Lesson: True friendship is a treasure that shines brighter than any gem."
+    },
+    {
+      "from": "Uncle Pie (planner)",
+      "to": "Uncle Pie (writer)",
+      "prompt": "Page 1: In a charming village with cobblestone streets, Alice encounters Bob, the playful cat, chasing a butterfly. They exchange curious glances. | Page 2: Alice excitedly shows Bob her treasure map, but in his playful antics, Bob accidentally tears it. Alice looks upset, and Bob feels guilty. | Page 3: Realizing they need each other, Alice and Bob team up to follow the torn map pieces. They encounter obstacles but help each other overcome them. | Page 4: At the end of the map, Alice and Bob find a box filled with sparkling gems. They realize that their friendship is the greatest treasure of all. | Page 5: Grateful for their adventure, Alice and Bob share a warm hug, understanding that true friendship is a treasure that shines brighter than any gem."
+    },
+    {
+      "from": "Vishnu",
+      "to": "Uncle Pie (writer)",
+      "prompt": "- Page 4 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").\n- Page 5: split this 17-word sentence into two short ones: \"In each other's embrace, they find the truest gem, a friendship that shines brighter than any treasure.\"\n- Page 5 slips into present tense; tell the whole page in past tense (\"she walked\", not \"she walks\").\n- Page 1 reads at grade 6.7; use shorter sentences and simpler words (target grade 2-3).\n- Page 2: replace these stock or grown-up phrases with something concrete a child can picture: eyes shining with.\n- Page 2 reads at grade 6.5; use shorter sentences and simpler words (target grade 2-3).\n- Page 3: replace these stock or grown-up phrases with something concrete a child can picture: hearts full.\n- Page 3 reads at grade 5.7; use shorter sentences and simpler words (target grade 2-3).\n- Page 5: replace these stock or grown-up phrases with something concrete a child can picture: embrace, gratitude, hearts full, side by side."
+    }
+  ]
+}
